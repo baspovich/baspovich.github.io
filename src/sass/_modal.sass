@@ -1,4 +1,5 @@
 .overlay
+    display: none
     position: fixed
     width: 100%
     top: 0
@@ -9,11 +10,11 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    width: 936px
+    width: 870px
     min-height: 551px
     background: #f3eee0
     display: flex
-    padding: 52px 0 55px 0
+    padding: 52px 10px 55px 35px
     &__close
         position: absolute
         top: 10px
@@ -22,6 +23,7 @@
             width: 35px
             height: 35px
     &__img
+        cursor: pointer
         img
             height: 444px;
     &__text
@@ -43,3 +45,24 @@
             letter-spacing: normal
             text-align: center
             color: #626161
+    &__contact
+        width: 232px
+        height: 50px
+        position: absolute
+        right: 55px
+        bottom: 129px
+        font-family: PlayfairDisplay
+        font-size: 50.5px
+        line-height: 0.40
+        font-weight: bold
+        font-stretch: normal
+        font-style: italic
+        letter-spacing: normal
+        text-align: right
+        color: #000000
+        &:hover
+            color: #000000
+        span
+            font-size: 25.5px
+            line-height: 25.5px
+            text-align: left

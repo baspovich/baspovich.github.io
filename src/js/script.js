@@ -17,3 +17,10 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next slick-next_color"><img src="../icons/down.svg" class="prev"></button>'
     });
   });
+
+$('[data-modal=first-layout]').on('click', function() {
+  $('.overlay, #first-modal').fadeIn('slow');
+  });
+$('.modal__close').on('click', function() {
+  $('.overlay, #first-modal').fadeOut('slow');
+});
