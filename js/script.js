@@ -24,3 +24,16 @@ $('[data-modal=first-layout]').on('click', function() {
 $('.modal__close').on('click', function() {
   $('.overlay, #first-modal').fadeOut('slow');
 });
+
+
+$('.page-arrow').on( 'click', function(){ 
+  const el = $(this);
+  const dest = el.attr('href'); // получаем направление
+  if(dest !== undefined && dest !== '') { // проверяем существование
+      $('html').animate({ 
+          scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+      }, 500 // скорость прокрутки
+      );
+  }
+  return false;
+});
