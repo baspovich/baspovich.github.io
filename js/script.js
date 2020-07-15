@@ -25,6 +25,13 @@ $('.modal__close').on('click', function() {
   $('.overlay, #first-modal').fadeOut('slow');
 });
 
+$('[data-modal=second-layout]').on('click', function() {
+  $('.overlay, #second-modal').fadeIn('slow');
+  });
+$('.modal__close').on('click', function() {
+  $('.overlay, #second-modal').fadeOut('slow');
+});
+
 
 $('.page-arrow').on( 'click', function(){ 
   const el = $(this);
