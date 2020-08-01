@@ -6,7 +6,6 @@ $(document).ready(function(){
             {
                 breakpoint: 769,
                 settings: {
-                    dots: true,
                     arrows: false
                 }
             }
