@@ -1,7 +1,7 @@
 const btnSubscribe = document.querySelectorAll('.btn'),
       popup = document.querySelectorAll('.popup'),
       popupClose = document.querySelectorAll('.popup__close'),
-      videoBtn = document.querySelector('#video');
+      videoBtn = document.querySelector('.header__play');
 
 console.log('init js');
 
@@ -30,5 +30,4 @@ popup.forEach(item => {
         }
     });
 });
-
 
