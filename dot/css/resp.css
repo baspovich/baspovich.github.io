@@ -59,7 +59,10 @@
     }
 } 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    header {
+        background-image: url(../images/KusamaDot1-mob.png);
+    }
     header .top-header .logo a {
         display: block;
         width: 50px;
