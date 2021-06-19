@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru"
+    class="is-device-desktop is-os-mac-os is-os-mac-os-10-15-7 is-engine-webkit is-browser-chrome is-browser-chrome-91"
+    style="height: 100%;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px
+        }
+
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc
+        }
+
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+
+        .dismissButton:focus:not(:focus-visible) {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            outline: none
+        }
+
+        .dismissButton:focus-visible {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd
+        }
+
+        .dismissButton:hover:focus:not(:focus-visible) {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc
+        }
+
+        .dismissButton:hover:focus-visible {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd
+        }
+
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+        }
+
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043
+        }
+
+        .gm-style .gm-style-mtc label,
+        .gm-style .gm-style-mtc div {
+            font-weight: 400
+        }
+
+        .gm-style .gm-style-mtc ul,
+        .gm-style .gm-style-mtc li {
+            box-sizing: border-box
+        }
+
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1) {
+            display: none
+        }
+
+        .gm-control-active:hover>img:nth-child(2),
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+        .gm-style img {
+            max-width: none;
+        }
+
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+        #ajax_loader {
+            width: 100%;
+            height: 30px;
+            margin-top: 15px;
+            text-align: center;
+            border: none !important;
+        }
+
+        #arrow_top {
+            background: url("../../../../../image/chevron_up.png") no-repeat transparent;
+            background-size: cover;
+            position: fixed;
+            bottom: 50px;
+            right: 15px;
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+        }
+        .fancybox-margin {
+            margin-right: 0px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo {
+                margin-left: -105px;
+                position: absolute;
+                top: 75px;
+                left: 50%;
+            }
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/font.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Срубы под ключ в Москве, цены на деревянные дома в России. Строительство домов из бруса от Basco </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/stylesheet.min.css" rel="stylesheet">
+
+    <link href="https://basco.com.ua/image/catalog/favicon.png" rel="icon">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style_v2.min.css" rel="stylesheet">
+    <link href="css/media.min.css" rel="stylesheet">
+</head>
+
+<body style="position: relative; min-height: 100%; top: 0px;">
+    <header style="background-image: url(img/banner.jpeg); background-size: cover; min-height: 500px;">
+        <a class="btn-mobile_menu">
+            <span></span>
+        </a>
+        <nav class="nav-top">
+            <div class="" style="display: flex; justify-content: space-between; margin-right: 40px;
+    margin-left: 40px;">
+                <ul class="menu-top" style="display: flex; align-items: center;  margin-top: 1rem; margin-bottom: 1rem;">
+                    <li>
+                        <a href="#">
+                            <img src="img/logo-basco.png" style="height: 30px; margin-right: 20px">
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><span style="color: white;">Главная</span></a>
+                    </li>
+                    <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+                        <a href="javascript:void(0);" class="dropdown-toggle"><span style="color: #ccb264;">Проекты</span></a>
+                        <ul class="secon-menu">
+                            <li>
+                                <a href="projects/houses/">Дома</a>
+                            </li>
+                            <li>
+                                <a href="projects/bath/">Бани и сауны</a>
+                            </li>
+                            <li>
+                                <a href="projects/alcove/">Беседки</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+                        <a href="javascript:void(0);" class="dropdown-toggle"><span style="color: #ccb264;">Наши
+                                работы</span></a>
+                        <ul class="secon-menu">
+                            <li>
+                                <a href="our-work/house1.html">Из
+                                    оцилиндрованного бревна</a>
+                            </li>
+                            <li>
+                                <a href="our-work/house2.html">Из
+                                    профилированного бруса</a>
+                            </li>
+                            <li>
+                                <a href="our-work/found.html">Фундаменты</a>
+                            </li>
+                            <li>
+                                <a href="our-work/garden.html">Садовая мебель</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+                        <a href="about_us.html"><span
+                                style="color: #ccb264;">О нас</span></a>
+                    </li>
+                    <li style="margin-right: 10px; margin-left: 10px">
+                        <a href="stroitelstvo.html">
+                            <span style="color: #ccb264;">Строительство</span>
+                        </a>
+                    </li>
+
+                    <li style="margin-right: 10px; margin-left: 10px">
+                        <a href="kontakti.html">
+                            <span style="color: #ccb264;">Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center">
+                    <a style="display: flex; align-items: center; color: #ccb264; margin-right: 30px; margin-top: 1rem; margin-bottom: 1rem; " href="tel:+79623668362">+79623668362</a>
+                    <ul class="soc-spr" style="margin-top: 1rem; margin-bottom: 1rem; ">
+                        <li><a href="https://fb.com/"></a></li>
+                        <li><a href="https://basco.com.ua/"></a></li>
+                        <li><a href="https://instagram.com/"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="head-bottom">
+            <div class="container">
+                <h1>Выберите дом своей мечты уже сейчас!</h1>
+                <h3>Оставьте заявку прямо сейчас и наш менеджер подберет для вас лучший проект </h3>
+            </div>
+        </div>
+    </header>
+
+    <div class="home-reletive">
+
+        <main class="page__content">
+            <div class="categories" id="menu1">
+                <div class="categories__list">
+                    <a class="category-item categories__item"
+                        href="/projects/houses/">
+                        <div class="category-item__photo"><img class="category-item__image"
+                                src="img/0.jpg"
+                                alt=""></div>
+                        <div class="category-item__wrapper">
+                            <h3 class="category-item__title">Дома из оцилиндрованного бревна</h3>
+                            <div class="category-item__icon"><span class="sprite-arrow_right"></span></div>
+                        </div>
+                    </a>
+                    <a class="category-item categories__item"
+                        href="/projects/alcove/">
+                        <div class="category-item__photo"><img class="category-item__image"
+                                src="img/1.jpg"
+                                alt=""></div>
+                        <div class="category-item__wrapper">
+                            <h3 class="category-item__title">Беседки</h3>
+                            <div class="category-item__icon"><span class="sprite-arrow_right"></span></div>
+                        </div>
+                    </a>
+                    <a class="category-item categories__item"
+                        href="/projects/bath/">
+                        <div class="category-item__photo"><img class="category-item__image"
+                                src="img/3-1.jpg"
+                                alt=""></div>
+                        <div class="category-item__wrapper">
+                            <h3 class="category-item__title">Сауны и бани</h3>
+                            <div class="category-item__icon"><span class="sprite-arrow_right"></span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="videos-slider">
+                <h3 class="videos-slider__title">Выберите дом своей мечты уже сейчас!</h3><span
+                    class="videos-slider__description" style="margin-top: 20px;">Оставьте заявку прямо сейчас и наш менеджер подберет для вас лучший проект</span>
+                <a class="videos-slider__button" href="https://basco.com.ua/#">Оставить заявку</a>
+            </div>
+
+            <div class="filters-section">
+                <d iv="" class="filters-section__list">
+
+                    <a id="belgium" class="filter-item filters-section__item"
+                        data-location="Бельгия">
+                        <img class="filter-item__image"
+                            src="img/0(1).jpg"
+                            alt="Бельгия">
+                        <span class="filter-item__description">Бельгия</span>
+                    </в>
+
+                    <a id="kitai" class="filter-item filters-section__item"
+                        data-location="Китай">
+                        <img class="filter-item__image"
+                            src="img/1(1).jpg"
+                            alt="Китай">
+                        <span class="filter-item__description">Китай</span>
+                    </a>
+                    <a id="beregovo" class="filter-item filters-section__item"
+                        data-location="Берегово">
+                        <img class="filter-item__image"
+                            src="img/2(1).jpg"
+                            alt="Берегово">
+                        <span class="filter-item__description">Берегово</span>
+                    </a>
+                    <a id="villadj" class="filter-item filters-section__item"
+                        data-location="Виллажи">
+                        <img class="filter-item__image"
+                            src="img/3.jpg"
+                            alt="Виллажи">
+                        <span class="filter-item__description">Виллажи</span></a>
+                </d>
+            </div>
+        </main>
+    </div>
+    <div class="about" id="menu2">
+        <div class="about__inner container">
+            <div class="about__head">
+                <h2 class="about__title"><b>О нашей компании</b> в цифрах и факты</h2>
+            </div>
+            <ul class="about__list">
+                <li class="about__item"><b>15 лет</b><span>Наши специалисты имеют более чем 15-ти летний опыт в по
+                        возведению сложных деревянных конструкций и изготовлению авторских проектов</span></li>
+                <li class="about__item"><b>500 проектов</b><span>За время существования нашей компании мы построили
+                        более 500 деревянных конструкций, включая дома, гостиницы, церкви, беседки, бани</span></li>
+                <li class="about__item"><b>16 регионов</b><span>Наши работы представлены в 16 регионах РФ, а также
+                        в странах СНГ, Европы и Азии. Ежегодно мы строим около 50 новых объектов</span></li>
+                <li class="about__item"><b>3000 м<sup>2</sup></b><span>Наши производственные площади позволяют
+                        изготавливать ежемесячно около 8-10 новых домокомплектов</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section box3" id="menu3">
+        <div class="container">
+            <div class="head-gorizont">
+                <h2>Более 850 эксклюзивных <b>проектов с планами, фото и ценами</b></h2>
+            </div>
+            <ul class="ul-projct desktop">
+                <li>
+                    <div class="bl-img">
+                        <img src="img/box3-img_1.jpg"
+                            alt="">
+                        <div class="band"></div>
+                    </div>
+                    <a href="" class="bl-text">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">привлекательных</span>
+                        <span class="txt3">бань и саун</span>
+                        <div class="band band-c"></div>
+                    </a>
+                    <div class="bl-img">
+                        <img src="img/box3-img_2.jpg"
+                            alt="">
+                        <div class="band"></div>
+                    </div>
+                    <a href="" class="bl-text bg-grey">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">эксклюзивных</span>
+                        <span class="txt3">гостиниц</span>
+                        <div class="band band-c"></div>
+                    </a>
+                    <div class="bl-img">
+                        <img src="img/box3-img_3.jpg"
+                            alt="">
+                        <div class="band"></div>
+                    </div>
+                    <a href="" class="bl-text">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">авторских</span>
+                        <span class="txt3">храмов</span>
+                        <div class="band band-c"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="bl-text bg-grey bg-left">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">комфортных</span>
+                        <span class="txt3">домов</span>
+                        <div class="band band-c band-top"></div>
+                    </a>
+                    <div class="bl-img">
+                        <img src="img/box3-img_4.jpg"
+                            alt="">
+                        <div class="band band-top"></div>
+                    </div>
+                    <a href="" class="bl-text">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">изысканных</span>
+                        <span class="txt3">беседок</span>
+                        <div class="band band-c band-top"></div>
+                    </a>
+                    <div class="bl-img">
+                        <img src="img/box3-img_5.jpg"
+                            alt="">
+                        <div class="band band-top"></div>
+                    </div>
+                    <a href="" class="bl-text">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">роскошных</span>
+                        <span class="txt3">ресторанов</span>
+                        <div class="band band-c band-top"></div>
+                    </a>
+                    <div class="bl-img">
+                        <img src="img/box3-img_6.jpg"
+                            alt="">
+                        <div class="band band-top"></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="ul-projct mobile">
+                <li>
+                    <div class="bl-img">
+                        <img src="img/box3-img_1.jpg"
+                            alt="">
+                    </div>
+                    <a href="" class="bl-text bg-grey bg-left">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">комфортных</span>
+                        <span class="txt3">домов</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="bl-text">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">привлекательных</span>
+                        <span class="txt3">бань и саун</span>
+                    </a>
+                    <div class="bl-img">
+                        <img src="img/box3-img_4.jpg"
+                            alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="bl-img">
+                        <img src="img/box3-img_2.jpg"
+                            alt="">
+                    </div>
+                    <a href="" class="bl-text">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">изысканных</span>
+                        <span class="txt3">беседок</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="bl-text bg-grey">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">эксклюзивных</span>
+                        <span class="txt3">гостиниц</span>
+                    </a>
+                    <div class="bl-img">
+                        <img src="img/box3-img_5.jpg"
+                            alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="bl-img">
+                        <img src="img/box3-img_3.jpg"
+                            alt="">
+                    </div>
+                    <a href="" class="bl-text">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">роскошных</span>
+                        <span class="txt3">ресторанов</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="bl-text bg-top">
+                        <span class="txt1">Проекты</span>
+                        <span class="txt2">авторских</span>
+                        <span class="txt3">храмов</span>
+                    </a>
+                    <div class="bl-img">
+                        <img src="img/box3-img_6.jpg"
+                            alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="box4">
+        <div class="container">
+            <div class="head-top-bottom">
+                <h2>Деревянные <b>дома со сруба</b></h2>
+                <p>Осуществляем полный цикл - от заготовки и обработки круглого леса до возведений домов под ключ.</p>
+            </div>
+            <ul class="ul-realizovano">
+                <li>
+                    <img src="img/box4-img_1.png"
+                        alt="">
+                    <b><i class="diametr"></i>160</b>
+                </li>
+                <li>
+                    <img src="img/box4-img_2.png"
+                        alt="">
+                    <b><i class="diametr"></i>180</b>
+                </li>
+                <li>
+                    <img src="img/box4-img_3.png"
+                        alt="">
+                    <b><i class="diametr"></i>200</b>
+                </li>
+                <li>
+                    <img src="img/box4-img_4.png"
+                        alt="">
+                    <b><i class="diametr"></i>220</b>
+                </li>
+                <li>
+                    <img src="img/box4-img_5.png"
+                        alt="">
+                    <b><i class="diametr"></i>240</b>
+                </li>
+                <li>
+                    <img src="img/box4-img_6.png"
+                        alt="">
+                    <b><i class="diametr"></i>260</b>
+                </li>
+                <li>
+                    <img src="img/box4-img_7.png"
+                        alt="">
+                    <b><i class="diametr"></i>280</b>
+                </li>
+                <li>
+                    <img src="img/box4-img_8.png"
+                        alt="">
+                    <b><i class="diametr"></i>300</b>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="box5">
+        <div class="container">
+            <div class="head-gorizont">
+                <h2>Проекты домов из <b>оцилиндрованного бревна</b></h2>
+            </div>
+            <p>На разных стадиях разработки, реализации и строительства ежемесячно находится ряд проектов, с которыми
+                можно ознакомится на нашем сайте.</p>
+            <ul class="ul-proekt">
+                <li>
+                    <div class="hold-proekt"
+                        style="background: url(img/melnitsa-girso-4.jpg) center; background-size: cover; background-position-x: -138px;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Рестосран — <b> «Гирсо»</b></span>
+                            <span class="pr-info"><b>Общая площадь:</b> 252 м²</span>
+                            <span class="pr-info"><b>Количество комнат:</b> 3</span>
+                            <span class="pr-info"><b>Этажность:</b> 2</span>
+                            <span class="pr-info"><b>Габариты:</b> 8,7 х 8,7 м</span>
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hold-proekt"
+                        style="background: url(img/repriza-2.jpeg) center; background-size: cover; background-position-x: -35px;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Кафе — <b>«Реприза»</b></span>
+                            <span class="pr-info"><b>Общая площадь дома:</b> 153 м²</span>
+                            <span class="pr-info"><b>Количество комнат:</b> 2</span>
+                            <span class="pr-info"><b>Этажность:</b> 1</span>
+                            <span class="pr-info"><b>Габариты:</b> 11 х 14 м</span>
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hold-proekt"
+                        style="background: url(img/morskaya-zvezda-1.jpeg) center; background-size: cover; background-position-x: 90px;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Гостиница — <b>«Морская Звезда»</b></span>
+                            <span class="pr-info"><b>Общая площадь дома:</b> 468 м²</span>
+                            <span class="pr-info"><b>Количество комнат:</b> 24</span>
+                            <span class="pr-info"><b>Этажность:</b> 3</span>
+                            <span class="pr-info"><b>Габариты:</b> 13 х 16 м</span>
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hold-proekt"
+                        style="background: url(img/apollon-2.jpeg) center; background-size: cover; background-position-x: 167px;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Двухэтажный дом — <b>«Аполлон»</b></span>
+                            <span class="pr-info"><b>Общая площадь:</b> 216 м²</span>
+                            <span class="pr-info"><b>Количество комнат:</b> 6</span>
+                            <span class="pr-info"><b>Этажность:</b> 2</span>
+                            <span class="pr-info"><b>Габариты:</b> 11 х 12 м</span>
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="box6 box4">
+        <div class="container">
+            <div class="head-top-bottom">
+                <h2>Дома из <b>профилированного бруса</b></h2>
+                <p>Естественная красота дерева в сочетании с изысканными дизайном и выдающимся эксплуатационным
+                    качествами делают дома из профилированного бруса достойными внимания самых взыскательных клиентов.
+                </p>
+            </div>
+            <ul class="ul-realizovano">
+                <li>
+                    <img src="img/box6-img_1.png"
+                        alt="">
+                    <b class="br-width">60</b>
+                </li>
+                <li>
+                    <img src="img/box6-img_2.png"
+                        alt="">
+                    <b class="br-width">150</b>
+                </li>
+                <li>
+                    <img src="img/box6-img_3.png"
+                        alt="">
+                    <b class="br-width">200</b>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="box5 box7">
+        <div class="container">
+            <div class="head-gorizont">
+                <h2 style="width: 100%;">Проекты домов из <b>профилированного бруса</b></h2>
+            </div>
+            <p>В нашей базе есть много реализованных проектов из профилированного бруса,<br>некоторые из них Вы можете
+                видеть на нашем сайте.</p>
+            <ul class="ul-proekt">
+                <li>
+                    <div class="hold-proekt"
+                        style="background: url(img/georgina-2.jpeg) center; background-size: cover; background-position-x: -185px;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Гостиница — <b>«Георгина»</b></span>
+                            <span class="pr-info"><b>Общая площадь дома:</b> 137 м²</span>
+                            <span class="pr-info"><b>Количество комнат:</b> 8</span>
+                            <span class="pr-info"><b>Этажность:</b> 2</span>
+                            <span class="pr-info"><b>Габариты:</b> 8 х 9 м</span>
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hold-proekt"
+                        style="background: url(img/barselona-2.jpeg) center; background-size: cover; background-position-x: -81px;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Деревянный дом — <b>«Барселона»</b></span>
+                            <span class="pr-info"><b>Общая площадь:</b> 236 м²</span>
+                            <span class="pr-info"><b>Количество комнат:</b> 6</span>
+                            <span class="pr-info"><b>Этажность:</b> 2</span>
+                            <span class="pr-info"><b>Габариты:</b> 10 х 12 м</span>
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hold-proekt"
+                        style="background: url(img/home-16.jpeg) center; background-size: cover; background-position-x: 83px;">
+                          <div class="hold-info-pr">
+                            <span class="pr-head">Семейный дом — <b>«Франт»</b></span>
+                            <span class="pr-info"><b>Общая площадь:</b> 316 м²</span>
+                            <span class="pr-info"><b>Количество комнат:</b> 1</span>
+                            <span class="pr-info"><b>Этажность:</b> 2</span>
+                            <span class="pr-info"><b>Габариты:</b> 14 х 12 м</span>
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hold-proekt"
+                        style="background: url(img/andersen-1.jpeg) center; background-size: cover; background-position-x: 181px;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Кафе-ресторан — <b>«Андерсен»</b></span>
+                            <span class="pr-info"><b>Общая площадь:</b> 120 м²</span>
+                            <span class="pr-info"><b>Количество комнат:</b> 1</span>
+                            <span class="pr-info"><b>Этажность:</b> 1</span>
+                            <span class="pr-info"><b>Габариты:</b> 10 х 12 м</span>
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="box9">
+        <div class="container">
+            <div class="w50">
+                <div class="head-gorizont">
+                    <h2>Не знаете с чего начать <b>и какой дом выбрать?</b></h2>
+                </div>
+                <p>Отправьте запрос нашему специалисту и Вы получите ответы на все интересующие Вас вопросы относительно
+                    строительства деревянных домов и выбора проекта</p>
+            </div>
+            <div class="w50">
+                <form class="form-callback-index" method="get" novalidate="novalidate">
+                    <input type="hidden" id="text" name="sendpage"
+                        value="Форма «Не знаете с чего начать...» на главной">
+                    <div class="row-form">
+                        <input class="form_input" type="text" name="name" placeholder="Ваше Имя">
+                    </div>
+                    <div class="row-form">
+                        <input class="form_input" type="text" name="phone" placeholder="Ваш телефон">
+                    </div>
+                    <button type="submit" class="but-form">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section box10" id="menu5">
+        <div class="container">
+            <div class="w50">
+                <div class="relative">
+                    <img src="img/box10-img_1.jpg"
+                        alt="">
+                    <div class="band g-band"></div>
+                </div>
+            </div>
+            <div class="w50">
+                <div class="head-gorizont">
+                    <h2>Почему сотни клиентов <b class="block">выбрали именно нас?</b></h2>
+                </div>
+                <ol>
+                    <li>При изготовлении деревянных домов мы используем собственное производство и только качественную
+                        древесину</li>
+                    <li>Мы подготовили более 850 современных проектов домов из оцилиндрованного бревна и
+                        профилированного бруса</li>
+                    <li>Выполняем строительство деревянных домов под ключ и подготавливаем всю необходимую техническую и
+                        сопроводительную документацию</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="box11">
+        <div class="left100">
+            <div class="w50 color-white"
+                style="background: url(img/box11-img_1.jpeg) no-repeat center; background-size: cover;">
+                <div class="bl-left">
+                    <div class="head-gorizont">
+                        <h2>Наши работы<b class="block">300 довольных клиентов</b></h2>
+                    </div>
+                    <p>Воспользовавшись услугами компании «BASCO», Вы сможете наслаждатся жизнью в доме Вашей мечты уже
+                        через несколько месяцев</p>
+                </div>
+            </div>
+            <div class="w50">
+                <div class="bl-right">
+                    <ul class="ul-proekt">
+                        <li>
+                            <div class="hold-proekt p-left"
+                                style="background: url(img/home-19.jpeg) center; background-position-x: 160px; background-position-y: 0px; background-size: cover; filter: contrast(120%);">
+                                <div class="hold-info-pr">
+                                    <span class="pr-head">Двухэтажный дом из<b>бруса в Калуге</b></span>
+                                    <span>Наша фирма предлагает услуги по проектированию и оперативному строителльству
+                                        деревянных домов высокого качества</span>
+                                </div>
+                                <div class="band g-band"></div>
+                                <div class="band band-c g-band"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hold-proekt"
+                                style="background: url(img/home-20-2.jpeg) center; background-position-x: -105px; background-position-y: 0px; background-size: cover; filter: contrast(120%);">
+                                <div class="hold-info-pr">
+                                    <span class="pr-head">Деревянный дом <b>в Москве</b></span>
+                                    <span>Мы гарантирует безопасность и комфорт Вашего дома</span>
+                                    
+                                </div>
+                                <div class="band g-band"></div>
+                                <div class="band band-c g-band"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right100">
+            <div class="w50">
+                <div class="bl-left">
+                    <ul class="ul-proekt">
+                        <li>
+                            <div class="hold-proekt p-left"
+                                style="background: url(img/home-21.jpeg) center; background-position-x: 272px; background-position-y: -47px; background-size: cover; filter: contrast(110%);">
+                                <div class="hold-info-pr">
+                                    <span class="pr-head">Двухэтажный дом из<b>бруса в Смоленске</b></span>
+                                    <span>Строительство осуществляется из материалов, обеспечивающий экологическую
+                                        безопасность и безупречный уют.</span>
+                                    
+                                </div>
+                                <div class="band g-band"></div>
+                                <div class="band band-c g-band"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hold-proekt"
+                                style="background: url(img/home-23.jpeg) center; background-position-x: -100px; background-position-y: -58px; background-size: cover; filter: contrast(120%);">
+                                <div class="hold-info-pr">
+                                    <span class="pr-head">Гостиница<b>в Туле</b></span>
+                                    <span>Лучшие специалисты с большим опытом работы в своей области помогут орести дом
+                                        Вашей мечты, созданный по неповторимому дизайну</span>
+                                    
+                                </div>
+                                <div class="band g-band"></div>
+                                <div class="band band-c g-band"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w50 color-white right-inner"
+                style="background: url(img/home-22-2.jpeg) no-repeat center; background-position-x: -100px; background-size: cover; filter: contrast(140%);">
+                <div class="bl-right">
+                    <div class="head-gorizont">
+                        <h2 style="background: rgba(94, 60, 0, 0.5);">Наши работы<b class="block">Более 300 довольных
+                                клиентов</b></h2>
+                    </div>
+                    <p style="background: rgba(94, 60, 0, 0.5); padding: 10px;">Прямо сейчас у Вас есть возможность
+                        подобрать план и вид будущего дома, используя желамые параметры</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="ul-proekt li-50">
+                <li>
+                    <div class="hold-proekt p-left"
+                        style="background: url(img/home-24.jpeg) center; background-position-x: 142px; background-position-y: -5px; background-size: cover;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Уютный дом из<b>бруса в Рязани</b></span>
+                            <span>При изготовлении деревянных домов мы используем собственное производство и только
+                                качественную древисину</span>
+                            
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hold-proekt p-left"
+                        style="background: url(img/home-25.jpeg) center; background-position-x: 119px; background-position-y: -133px; background-size: cover;">
+                        <div class="hold-info-pr">
+                            <span class="pr-head">Дом со сруба<b>в пригороде Москвы</b></span>
+                            <span>Природный материал создает условия оптимальной влажности внутри помещения, обладает
+                                высоким уровнем прочности и теплоизоляции</span>
+                            
+                        </div>
+                        <div class="band g-band"></div>
+                        <div class="band band-c g-band"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section box-contact" id="menu6">
+        <div class="container">
+            <div class="info-contact" style="display: inline-block;">
+                <div class="head-gorizont">
+                    <h2><b>Контакты</b></h2>
+                </div>
+                <div class="row-contact">
+                    <div class="hold-info tel-contact">
+                        <span>Телефоны:</span>
+                        <a rel="nofollow" href="https://wa.me/79623668362" target="_blank"><b>8 (962) 366 83 62 <img
+                                    src="img/viber.png">
+                                <img
+                                    src="img/whatsapp.png"></b></a>
+                    </div>
+                    <div class="hold-info mail-contact">
+                        <span>Электронная почта:</span>
+                        <a rel="nofollow" href="mailto:basco-house@yandex.ru"><b>basco-house@yandex.ru </b></a>
+                    </div>
+                </div>
+                <div class="hold-info clock-contact">
+                    <span>Время работы:</span>
+                    <table style="width: 100%;">
+                        <tbody>
+                            <td>10<sup>00</sup>&nbsp;—&nbsp;19<sup>00</sup></td>
+                        </tbody>
+                    </table>
+                    </div>
+                <div class="hold-info adress-contact">
+                    <span>Адрес:</span>
+                    <b>Москва, Кутузовский проспект 30 </b>
+                </div>
+                <form class="form form-contact-index" method="get" novalidate="novalidate">
+                    <input type="hidden" id="text" name="sendpage" value="Форма в блоке контакты на главной">
+                    <div class="row-form row-over">
+                        <div class="in-name">
+                            <input class="form_input" type="text" name="name" placeholder="Имя:">
+                        </div>
+                        <div class="in-tel">
+                            <input class="form_input" type="text" name="phone" placeholder="Телефон:">
+                        </div>
+                    </div>
+                    <div class="row-form">
+                        <input class="form_input" type="text" name="email" placeholder="E-mail:">
+                    </div>
+                    <div class="row-form">
+                        <button type="submit" class="but-form">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <style>
+                .ya-mapbox {
+                    display: inline-block;
+                }
+                .ya-mapbox-mob {
+                    display: none;
+                }
+            </style>
+            <div class="ya-mapbox">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8396bf52b7e14ccdb0cec8a3fab3d2d715ea8dee5e7fe8f2bba656b6acecc203&amp;width=500&amp;height=579&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="ya-mapbox-mob">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8396bf52b7e14ccdb0cec8a3fab3d2d715ea8dee5e7fe8f2bba656b6acecc203&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <style>
+                @media (max-width: 1024px) {
+                    .ya-mapbox  {
+                        display: none;
+                    }
+                    .ya-mapbox-mob {
+                        width: 100%;
+                        display: inline-block;
+                    }
+                }
+            </style>
+        </div>
+    </section>
+</body>
+
+</html>

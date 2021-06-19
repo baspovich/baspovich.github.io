@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru"
+    class="is-device-desktop is-os-mac-os is-os-mac-os-10-15-7 is-engine-webkit is-browser-chrome is-browser-chrome-91"
+    style="height: 100%;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px
+        }
+
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc
+        }
+
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+
+        .dismissButton:focus:not(:focus-visible) {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            outline: none
+        }
+
+        .dismissButton:focus-visible {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd
+        }
+
+        .dismissButton:hover:focus:not(:focus-visible) {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc
+        }
+
+        .dismissButton:hover:focus-visible {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd
+        }
+
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+        }
+
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043
+        }
+
+        .gm-style .gm-style-mtc label,
+        .gm-style .gm-style-mtc div {
+            font-weight: 400
+        }
+
+        .gm-style .gm-style-mtc ul,
+        .gm-style .gm-style-mtc li {
+            box-sizing: border-box
+        }
+
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1) {
+            display: none
+        }
+
+        .gm-control-active:hover>img:nth-child(2),
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+        .gm-style img {
+            max-width: none;
+        }
+
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+        #ajax_loader {
+            width: 100%;
+            height: 30px;
+            margin-top: 15px;
+            text-align: center;
+            border: none !important;
+        }
+
+        #arrow_top {
+            background: url("../../../../../image/chevron_up.png") no-repeat transparent;
+            background-size: cover;
+            position: fixed;
+            bottom: 50px;
+            right: 15px;
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+        }
+        .fancybox-margin {
+            margin-right: 0px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo {
+                margin-left: -105px;
+                position: absolute;
+                top: 75px;
+                left: 50%;
+            }
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/font.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Срубы под ключ в Москве, цены на деревянные дома в России. Строительство домов из бруса от Basco </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/stylesheet.min.css" rel="stylesheet">
+
+    <link href="https://basco.com.ua/image/catalog/favicon.png" rel="icon">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style_v2.min.css" rel="stylesheet">
+    <link href="css/media.min.css" rel="stylesheet">
+</head>
+
+<body style="position: relative; min-height: 100%; top: 0px;">
+    <header style="background-image: url(img/banner.jpeg); background-size: cover; min-height: 500px;">
+        <a class="btn-mobile_menu">
+            <span></span>
+        </a>
+        <nav class="nav-top">
+            <div class="" style="display: flex; justify-content: space-between; margin-right: 40px;
+    margin-left: 40px;">
+                <ul class="menu-top" style="display: flex; align-items: center;  margin-top: 1rem; margin-bottom: 1rem;">
+                    <li>
+                        <a href="#">
+                            <img src="img/logo-basco.png" style="height: 30px; margin-right: 20px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html"><span style="color: #ccb264;">Главная</span></a>
+                    </li>
+                    <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+                        <a href="javascript:void(0);" class="dropdown-toggle"><span style="color: #ccb264;">Проекты</span></a>
+                        <ul class="secon-menu">
+                            <li>
+                                <a href="projects/houses/">Дома</a>
+                            </li>
+                            <li>
+                                <a href="projects/bath/">Бани и сауны</a>
+                            </li>
+                            <li>
+                                <a href="projects/alcove/">Беседки</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+                        <a href="javascript:void(0);" class="dropdown-toggle"><span style="color: #ccb264;">Наши
+                                работы</span></a>
+                        <ul class="secon-menu">
+                            <li>
+                                <a href="our-work/house1.html">Из
+                                    оцилиндрованного бревна</a>
+                            </li>
+                            <li>
+                                <a href="our-work/house2.html">Из
+                                    профилированного бруса</a>
+                            </li>
+                            <li>
+                                <a href="our-work/found.html">Фундаменты</a>
+                            </li>
+                            <li>
+                                <a href="our-work/garden.html">Садовая мебель</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+                        <a href="about_us.html"><span
+                                style="color: #ccb264;">О нас</span></a>
+                    </li>
+                    <li style="margin-right: 10px; margin-left: 10px" class="active">
+                        <a href="">
+                            <span style="color: #ccb264;">Строительство</span>
+                        </a>
+                    </li>
+
+                    <li style="margin-right: 10px; margin-left: 10px">
+                        <a href="kontakti.html">
+                            <span style="color: #ccb264;">Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center">
+                    <a style="display: flex; align-items: center; color: #ccb264; margin-right: 30px; margin-top: 1rem; margin-bottom: 1rem; " href="tel:+79623668362">+79623668362</a>
+                    <ul class="soc-spr" style="margin-top: 1rem; margin-bottom: 1rem; ">
+                        <li><a href="https://fb.com/"></a></li>
+                        <li><a href="https://basco.com.ua/"></a></li>
+                        <li><a href="https://instagram.com/"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="head-bottom">
+            <div class="container">
+                <h1>Выберите дом своей мечты уже сейчас!</h1>
+                <h3>Оставьте заявку прямо сейчас и наш менеджер подберет для вас лучший проект </h3>
+            </div>
+        </div>
+    </header>
+    <div class="hold-second-menu">
+      <div class="container">
+                                  <div class="wrap-second-menu">
+              <ul class="second-menu">
+                                  <li  class="active"
+                  ><a
+                          href="#">Срок строительства</a></li>
+                                  <li
+                  ><a
+                          href="stroitelstvo2.html">Наши услуги</a></li>
+                                  
+                                  <li
+                  ><a
+                          href="stroitelstvo3.html">Цены на деревянные дома</a></li>
+                                  
+                  
+              </ul>
+          </div>
+                                                                                                                                                              </div>
+  </div>
+<div class="container category-articles">
+  
+			<ul class="breadcrumb">
+						<li><a href="https://basco.com.ua/"><i class="fa fa-home"></i></a></li>
+						<li><a href="https://basco.com.ua/stroitelstvoo/">Строительство</a></li>
+						<li>Срок строительства</li>
+			</ul>
+			
+  <div class="">                <div id="content" class="category_articles">
+      <div id="mfilter-content-container">      <div class="tadle-term-construction border-none">    <div class="row-term-construction">        <div class="column-term-construction w30"> </div>
+        <div class="column-term-construction">Месяц 1</div>
+        <div class="column-term-construction">Месяц 2</div>
+        <div class="column-term-construction">Месяц 3</div>
+        <div class="column-term-construction">Месяц 4</div>
+        <div class="column-term-construction">Месяц 5</div>
+        <div class="column-term-construction">Месяц 6</div>
+        <div class="column-term-construction">Месяц 7</div>
+    </div>
+</div>
+      <div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-01"><span>Архитектурный проект</span></button>        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+    </div>
+</div>
+<div class="row-description collapse" id="text-01"><span>Архитектурный проект дома из клееного бруса изготавливается в месячный срок при оперативном согласовании с Клиентом предлагаемых архитектором вариантов дизайн-решений. На данном этапе определяется расположение инженерных систем и точек их вывода (розетки, выключатели и т.п.) относительно мебели, инженерного оборудования и бытовой техники.</span></div>
+<div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-02"><span>Конструкторская проработка проекта</span></button>        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg bg-none"></span>                <span class="bg"></span>                 <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg "></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>            </div>
+        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+    </div>
+</div>
+<div class="row-description collapse" id="text-02"><span>Конструкторская часть проекта разрабатывается на основе согласованных с Клиентом архитектурных решений. На данном этапе определяются технические параметры элементов конструкции будущего дома из клееного бруса, выполняются расчеты нагрузок. При подготовке конструкторских документов возможно внесение изменений в основной проект.</span></div>
+<div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-03"><span>Проектирование инженерных систем</span></button>        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+    </div>
+</div>
+<div class="row-description collapse" id="text-03"><span>Инженерная проработка проекта дома из клееного бруса ведется на всех этапах его подготовки, начиная с архитектурной части. На данном этапе производятся расчеты схем расположения инженерных коммуникаций (электрика, сантехника, водоснабжение, отопление, вентиляция и кондиционирование) в соответствии с действующими СНиПами.</span></div>
+<div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-04"><span>Возведение фундамента</span></button>        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                                <span class="bg"></span>                <span class="bg"></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>            </div>
+        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+    </div>
+</div>
+<div class="row-description collapse" id="text-04"><span>Срок сооружения фундамента до максимального набора прочности бетоном занимает в среднем один месяц, вне зависимости от времени года. Бетон со специальными добавками не боится отрицательных температур. Увеличить срок возведения фундамента могут только затяжные дожди и бездорожье, затрудняющие доставку товарного бетона на стройплощадку.</span></div>
+<div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-05"><span>Строительство стен</span></button>        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                                <span class="bg"></span>                <span class="bg"></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>            </div>
+        </div>
+                <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+    </div>
+</div>
+<div class="row-description collapse" id="text-05"><span>Стены дома из клееного бруса возводятся в сроки от двух недель до месяца.. Идеальными периодами для монтажа стеновых конструкций являются сухое лето или снежная зима - удобен подвоз материала на стройплощадку, а при хранении и монтаже нет риска испачкать или намочить брус. В сильно дождливую погоду строительство стен ведется с перерывами.</span></div>
+<div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-06"><span>Строительство крыши</span></button>        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                                <span class="bg"></span>                <span class="bg"></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>            </div>
+        </div>
+                       <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+    </div>
+</div>
+<div class="row-description collapse" id="text-06"><span>Строительство крыши дома из клееного бруса включает в себя монтаж стропильных конструкций и обрешетки, устройство ветро- и пароизоляции, утепление, укладку кровельного материала. Это важная, ответственная и трудоемкая работа на высоте, сроки которой зависят от сложности, формы и конфигурации крыши, от типа кровли, от погодных условий.</span></div>
+<div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-07"><span>Установка окон, дверей, черновая отделка</span></button>        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg bg-none"></span>                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                                <span class="bg"></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>            </div>
+        </div>
+               <div class="column-term-construction"></div>
+    </div>
+</div>
+<div class="row-description collapse" id="text-07"><span>Сразу после сборки кровельной конструкции производится установка окон и входных дверей. После защиты внутреннего пространства от осадков и ветра, выполняется утепление и черновая отделка дома из клееного бруса (черновые полы и перекрытия, перегородки и т.п.).</span></div>
+<div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-08"><span>Монтаж инженерных коммуникаций</span></button>        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                                <span class="bg"></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>            </div>
+        </div>
+                   </div>
+</div>
+<div class="row-description collapse" id="text-08"><span>Прокладка инженерных коммуникаций осуществляется до начала чистовой отделки. Монтаж трасс трубопроводов систем отопления, водоснабжения и канализации, электрических проводов и кабелей в доме из клееного бруса выполняется по периметру стен скрытым способом в специальных пазах. Монтируется система вентиляции.</span></div>
+<div class="tadle-term-construction">    <div class="row-term-construction">        <div class="column-term-construction w30">            <button class="" data-toggle="collapse" data-target="#text-09"><span>Финишная отделка</span></button>        </div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction"></div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                <span class="bg bg-none"></span>                <span class="bg bg-none"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+        <div class="column-term-construction dni">            <div class="hold-dni">                                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>                <span class="bg"></span>            </div>
+        </div>
+                   </div>
+</div>
+<div class="row-description collapse" id="text-09"><span>Чистовая отделка – последний этап строительства дома из клееного бруса. Включает в себя обработку внешней и внутренней поверхности стен декоративно – защитными составами, укладку половой доски или напольного покрытия, отделку потолков, перегородок, откосов. В «мокрых» помещениях (ванная, туалет, кухня) укладывается керамическая плитка.</span></div>
+				            
+</body></html>

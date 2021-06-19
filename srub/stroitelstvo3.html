@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru"
+  class="is-device-desktop is-os-mac-os is-os-mac-os-10-15-7 is-engine-webkit is-browser-chrome is-browser-chrome-91"
+  style="height: 100%;">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    .dismissButton {
+      background-color: #fff;
+      border: 1px solid #dadce0;
+      color: #1a73e8;
+      border-radius: 4px;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      height: 36px;
+      cursor: pointer;
+      padding: 0 24px
+    }
+
+    .dismissButton:hover {
+      background-color: rgba(66, 133, 244, 0.04);
+      border: 1px solid #d2e3fc
+    }
+
+    .dismissButton:focus {
+      background-color: rgba(66, 133, 244, 0.12);
+      border: 1px solid #d2e3fc;
+      outline: 0
+    }
+
+    .dismissButton:focus:not(:focus-visible) {
+      background-color: #fff;
+      border: 1px solid #dadce0;
+      outline: none
+    }
+
+    .dismissButton:focus-visible {
+      background-color: rgba(66, 133, 244, 0.12);
+      border: 1px solid #d2e3fc;
+      outline: 0
+    }
+
+    .dismissButton:hover:focus {
+      background-color: rgba(66, 133, 244, 0.16);
+      border: 1px solid #d2e2fd
+    }
+
+    .dismissButton:hover:focus:not(:focus-visible) {
+      background-color: rgba(66, 133, 244, 0.04);
+      border: 1px solid #d2e3fc
+    }
+
+    .dismissButton:hover:focus-visible {
+      background-color: rgba(66, 133, 244, 0.16);
+      border: 1px solid #d2e2fd
+    }
+
+    .dismissButton:active {
+      background-color: rgba(66, 133, 244, 0.16);
+      border: 1px solid #d2e2fd;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+    }
+
+    .dismissButton:disabled {
+      background-color: #fff;
+      border: 1px solid #f1f3f4;
+      color: #3c4043
+    }
+
+    .gm-style .gm-style-mtc label,
+    .gm-style .gm-style-mtc div {
+      font-weight: 400
+    }
+
+    .gm-style .gm-style-mtc ul,
+    .gm-style .gm-style-mtc li {
+      box-sizing: border-box
+    }
+
+    .gm-control-active>img {
+      box-sizing: content-box;
+      display: none;
+      left: 50%;
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    .gm-control-active>img:nth-child(1) {
+      display: block
+    }
+
+    .gm-control-active:hover>img:nth-child(1),
+    .gm-control-active:active>img:nth-child(1) {
+      display: none
+    }
+
+    .gm-control-active:hover>img:nth-child(2),
+    .gm-control-active:active>img:nth-child(3) {
+      display: block
+    }
+
+    .gm-ui-hover-effect {
+      opacity: .6
+    }
+
+    .gm-ui-hover-effect:hover {
+      opacity: 1
+    }
+
+    .gm-style .gm-style-cc a,
+    .gm-style .gm-style-cc button,
+    .gm-style .gm-style-cc span,
+    .gm-style .gm-style-mtc div {
+      font-size: 10px;
+      box-sizing: border-box
+    }
+
+    @media print {
+
+      .gm-style .gmnoprint,
+      .gmnoprint {
+        display: none
+      }
+    }
+
+    @media screen {
+
+      .gm-style .gmnoscreen,
+      .gmnoscreen {
+        display: none
+      }
+    }
+
+    .gm-style-pbc {
+      transition: opacity ease-in-out;
+      background-color: rgba(0, 0, 0, 0.45);
+      text-align: center
+    }
+
+    .gm-style-pbt {
+      font-size: 22px;
+      color: white;
+      font-family: Roboto, Arial, sans-serif;
+      position: relative;
+      margin: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+
+    .gm-style img {
+      max-width: none;
+    }
+
+    .gm-style {
+      font: 400 11px Roboto, Arial, sans-serif;
+      text-decoration: none;
+    }
+
+    #ajax_loader {
+      width: 100%;
+      height: 30px;
+      margin-top: 15px;
+      text-align: center;
+      border: none !important;
+    }
+
+    #arrow_top {
+      background: url("../../../../../image/chevron_up.png") no-repeat transparent;
+      background-size: cover;
+      position: fixed;
+      bottom: 50px;
+      right: 15px;
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+    }
+
+    .fancybox-margin {
+      margin-right: 0px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        margin-left: -105px;
+        position: absolute;
+        top: 75px;
+        left: 50%;
+      }
+    }
+  </style>
+  <link type="text/css" rel="stylesheet" href="css/font.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Срубы под ключ в Москве, цены на деревянные дома в России. Строительство домов из бруса от Basco </title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/stylesheet.min.css" rel="stylesheet">
+
+  <link href="https://basco.com.ua/image/catalog/favicon.png" rel="icon">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style_v2.min.css" rel="stylesheet">
+  <link href="css/media.min.css" rel="stylesheet">
+</head>
+
+<body style="position: relative; min-height: 100%; top: 0px;">
+  <header style="background-image: url(img/banner.jpeg); background-size: cover; min-height: 500px;">
+    <a class="btn-mobile_menu">
+      <span></span>
+    </a>
+    <nav class="nav-top">
+      <div class="" style="display: flex; justify-content: space-between; margin-right: 40px;
+    margin-left: 40px;">
+        <ul class="menu-top" style="display: flex; align-items: center;  margin-top: 1rem; margin-bottom: 1rem;">
+          <li>
+            <a href="index.html">
+              <img src="img/logo-basco.png" style="height: 30px; margin-right: 20px">
+            </a>
+          </li>
+          <li>
+            <a href="index.html"><span style="color: #ccb264;">Главная</span></a>
+          </li>
+          <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+            <a href="javascript:void(0);" class="dropdown-toggle"><span style="color: #ccb264;">Проекты</span></a>
+            <ul class="secon-menu">
+              <li>
+                <a href="projects/houses/">Дома</a>
+              </li>
+              <li>
+                <a href="projects/bath/">Бани и сауны</a>
+              </li>
+              <li>
+                <a href="projects/alcove/">Беседки</a>
+              </li>
+            </ul>
+          </li>
+          <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+            <a href="javascript:void(0);" class="dropdown-toggle"><span style="color: #ccb264;">Наши
+                работы</span></a>
+            <ul class="secon-menu">
+              <li>
+                <a href="our-work/house1.html">Из
+                  оцилиндрованного бревна</a>
+              </li>
+              <li>
+                <a href="our-work/house2.html">Из
+                  профилированного бруса</a>
+              </li>
+              <li>
+                <a href="our-work/found.html">Фундаменты</a>
+              </li>
+              <li>
+                <a href="our-work/garden.html">Садовая мебель</a>
+              </li>
+            </ul>
+          </li>
+          <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+            <a href="about_us.html"><span style="color: #ccb264;">О нас</span></a>
+          </li>
+          <li style="margin-right: 10px; margin-left: 10px" class="active">
+            <a href="">
+              <span style="color: #ccb264;">Строительство</span>
+            </a>
+          </li>
+
+          <li style="margin-right: 10px; margin-left: 10px">
+            <a href="kontakti.html">
+              <span style="color: #ccb264;">Контакты</span>
+            </a>
+          </li>
+        </ul>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center">
+          <a style="display: flex; align-items: center; color: #ccb264; margin-right: 30px; margin-top: 1rem; margin-bottom: 1rem; "
+            href="tel:+79623668362">+79623668362</a>
+          <ul class="soc-spr" style="margin-top: 1rem; margin-bottom: 1rem; ">
+            <li><a href="https://fb.com/"></a></li>
+            <li><a href="https://basco.com.ua/"></a></li>
+            <li><a href="https://instagram.com/"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="head-bottom">
+      <div class="container">
+        <h1>Выберите дом своей мечты уже сейчас!</h1>
+        <h3>Оставьте заявку прямо сейчас и наш менеджер подберет для вас лучший проект </h3>
+      </div>
+    </div>
+  </header>
+  <div class="hold-second-menu">
+    <div class="container">
+      <div class="wrap-second-menu">
+        <ul class="second-menu">
+          <li><a href="stroitelstvo.html">Срок строительства</a></li>
+          <li><a href="stroitelstvo2.html">Наши услуги</a></li>
+
+          <li class="active"><a href="#">Цены на деревянные дома</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="container category-articles">
+
+    <ul class="breadcrumb">
+      <li><a href="https://basco.com.ua/"><i class="fa fa-home"></i></a></li>
+      <li><a href="https://basco.com.ua/stroitelstvoo/">Строительство</a></li>
+      <li>Цены на деревянные дома</li>
+    </ul>
+
+    <div class="">
+      <div id="content" class="category_articles">
+        <div id="mfilter-content-container">
+          <div class="page-header-h2">
+            <h1>Цены на строительство деревянных домов</h1>
+          </div>
+          <p class="head-p">Цена за 1 м<sup>2</sup> на дома из оцилиндрованного бревна (сруб) <br>«Базова комплектация»
+          </p>
+          <table class="uk-table uk-table-hover" border="2" cellspacing="1" cellpadding="2">
+            <tbody>
+              <tr>
+                <th rowspan="2">Диаметр бревна, мм</th>
+                <th colspan="3">1-этажный дом, м<sup>2</sup></th>
+                <th colspan="5">2-этажный дом, м<sup>2</sup></th>
+              </tr>
+              <tr style="text-align: center;">
+                <td>от 50 м<sup>2</sup></td>
+                <td>от 100 м<sup>2</sup></td>
+                <td>от 150 м<sup>2</sup></td>
+                <td>от 150 м<sup>2</sup></td>
+                <td>от 200 м<sup>2</sup></td>
+                <td>от 250 м<sup>2</sup></td>
+                <td>от 300 м<sup>2</sup></td>
+                <td>от 350 м<sup>2</sup></td>
+              </tr>
+              <tr style="text-align: center;">
+                <td><img src="/image/catalog/table-img/brus-160.png.pagespeed.ce.lhCBOjC9I5.png" alt=""></td>
+                <!--160 от 50 м-->
+                <td>&lt; 2'886 грн.</td>
+                <!--160 от 100 м-->
+                <td>&lt; 3'215 грн.</td>
+                <!--160 от 150 м-->
+                <td>&lt; 2'340 грн.</td>
+                <!--160 от 150 м-->
+                <td>&lt; 2'245 грн.</td>
+                <!--160 от 200 м-->
+                <td>&lt; 2'072 грн.</td>
+                <!--160 от 250 м-->
+                <td>&lt; 2'294 грн.</td>
+                <!--160 от 300 м-->
+                <td>&lt; 2'327 грн.</td>
+                <!--160 от 350 м-->
+                <td>&lt; 2'234 грн.</td>
+              </tr>
+              <tr style="text-align: center;">
+                <td><img src="/image/catalog/table-img/brus-180.png.pagespeed.ce.inGbvD19Sh.png" alt=""></td>
+                <!--180 от 50 м-->
+                <td>&lt; 3'179 грн.</td>
+                <!--180 от 100 м-->
+                <td>&lt; 3'565 грн.</td>
+                <!--180 от 150 м-->
+                <td>&lt; 2'597 грн.</td>
+                <!--180 от 150 м-->
+                <td>&lt; 2'502 грн.</td>
+                <!--180 от 250 м-->
+                <td>&lt; 2'309 грн.</td>
+                <!--180 от 250 м-->
+                <td>&lt; 2'556 грн.</td>
+                <!--180 от 300 м-->
+                <td>&lt; 2'593 грн.</td>
+                <!--180 от 350 м-->
+                <td>&lt; 2'489 грн.</td>
+              </tr>
+              <tr style="text-align: center;">
+                <td><img src="/image/catalog/table-img/brus-200.png.pagespeed.ce.kslHlksDAZ.png" alt=""></td>
+                <!--200 от 50 м-->
+                <td>&lt; 3'506 грн.</td>
+                <!--200 от 100 м-->
+                <td>&lt; 3'962 грн.</td>
+                <!--200 от 150 м-->
+                <td>&lt; 2'889 грн.</td>
+                <!--200 от 150 м-->
+                <td>&lt; 2'793 грн.</td>
+                <!--200 от 200 м-->
+                <td>&lt; 2'578 грн.</td>
+                <!--200 от 250 м-->
+                <td>&lt; 2'854 грн.</td>
+                <!--200 от 300 м-->
+                <td>&lt; 2'895 грн.</td>
+                <!--200 от 350 м-->
+                <td>&lt; 2'780 грн.</td>
+              </tr>
+              <tr style="text-align: center;">
+                <td><img src="/image/catalog/table-img/brus-220.png.pagespeed.ce.7UaiM2u4pX.png" alt=""></td>
+                <!--220 от 50 м-->
+                <td>&lt; 3'872 грн.</td>
+                <!--220 от 100 м-->
+                <td>&lt; 4'360 грн.</td>
+                <!--220 от 150 м-->
+                <td>&lt; 3'181 грн.</td>
+                <!--220 от 150 м-->
+                <td>&lt; 3'085 грн.</td>
+                <!--220 от 200 м-->
+                <td>&lt; 2'884 грн.</td>
+                <!--220 от 250 м-->
+                <td>&lt; 3'152 грн.</td>
+                <!--220 от 300 м-->
+                <td>&lt; 3'197 грн.</td>
+                <!--220 от 350 м-->
+                <td>&lt; 3'070 грн.</td>
+              </tr>
+              <!-- <tr style="text-align: center;">            <td>Пример дома:</td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Континент2 - Одноэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/kontynent2"><i class="uk-icon-hand-o-right"></i> Континент2</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Шенорд - Одноэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/shenord"><i class="uk-icon-hand-o-right"></i> Шенорд</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="" href="http://dominant-wood.com.ua/ru/proekty/degis" data-cached-title="Дегис - Одноэтажный дом"><i class="uk-icon-hand-o-right"></i> Дегис</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Кальмис3к - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/kalmis3k"><i class="uk-icon-hand-o-right"></i> Кальмис3к</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Зуена - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/zuena"><i class="uk-icon-hand-o-right"></i> Зуена</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Мэйдин - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/meydin"><i class="uk-icon-hand-o-right"></i> Мэйдин</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Зеркало - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/dzerkalo"><i class="uk-icon-hand-o-right"></i> Зеркало</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Венский - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/venskij-dom"><i class="uk-icon-hand-o-right"></i> Венский</a></td>        </tr> -->
+            </tbody>
+          </table>
+          <p class="head-p">Цена за 1 м<sup>2</sup> на дома из профилированного бруса<br>«Базовая комплектация»</p>
+          <table class="uk-table uk-table-hover" border="2" cellspacing="2" cellpadding="5">
+            <tbody>
+              <tr>
+                <th rowspan="2">Диаметр бревна, мм</th>
+                <th colspan="3">1-этажный дом, м<sup>2</sup></th>
+                <th colspan="5">2-этажный дом, м<sup>2</sup></th>
+              </tr>
+              <tr>
+                <td>от 50 м<sup>2</sup></td>
+                <td>от 100 м<sup>2</sup></td>
+                <td>от 150 м<sup>2</sup></td>
+                <td>от 150 м<sup>2</sup></td>
+                <td>от 200 м<sup>2</sup></td>
+                <td>от 250 м<sup>2</sup></td>
+                <td>от 300 м<sup>2</sup></td>
+                <td>от 350 м<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td><img src="/image/catalog/table-img/suh-brus-60.png.pagespeed.ce.gJc48Z7YKC.png" alt=""></td>
+                <td>&lt;</td>
+                <td>&lt;</td>
+                <td>&lt;</td>
+                <td>&lt;</td>
+                <td>&lt;</td>
+                <td>&lt;</td>
+                <td>&lt;</td>
+                <td>&lt;</td>
+              </tr>
+              <tr>
+                <td><img src="/image/catalog/table-img/suh-brus-150.png.pagespeed.ce.HRRyCQHCOI.png" alt=""></td>
+                <!--150 от 50 м.кв-->
+                <td>&lt; 4'636 грн.</td>
+                <!--150 от 100 м.кв-->
+                <td>&lt; 5'028 грн.</td>
+                <!--150 от 150 м.кв-->
+                <td>&lt; 3'787 грн.</td>
+                <!--150 от 150 м.кв-->
+                <td>&lt; 3'595 грн.</td>
+                <!--150 от 200 м.кв-->
+                <td>&lt;</td>
+                <!--150 от 250 м.кв-->
+                <td>&lt; 3'733 грн.</td>
+                <!--150 от 300 м.кв-->
+                <td>&lt;</td>
+                <!--150 от 350 м.кв-->
+                <td>&lt;</td>
+              </tr>
+              <tr>
+                <td><img src="/image/catalog/table-img/suh-brus-200.png.pagespeed.ce.Pg-ylpF0zS.png" alt=""></td>
+                <!--200 от 50 м.кв-->
+                <td>&lt; 6'080 грн.</td>
+                <!--200 от 100 м.кв-->
+                <td>&lt; 6'537 грн.</td>
+                <!--200 от 150 м.кв-->
+                <td>&lt; 4'890 грн.</td>
+                <!--200 от 150 м.кв-->
+                <td>&lt; 4'713 грн.</td>
+                <!--200 от 200 м.кв-->
+                <td>&lt;</td>
+                <!--200 от 250 м.кв-->
+                <td>&lt; 4'899 грн.</td>
+                <!--200 от 300 м.кв-->
+                <td>&lt;</td>
+                <!--200 от 350 м.кв-->
+                <td>&lt;</td>
+              </tr>
+              <!-- <tr >            <td>Пример дома:</td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Континент2 - Одноэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/kontynent2"><i class="uk-icon-hand-o-right"></i> Континент2</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Шенорд - Одноэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/shenord"><i class="uk-icon-hand-o-right"></i> Шенорд</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Дегис - Одноэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/degis"><i class="uk-icon-hand-o-right"></i> Дегис</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Кальмис3к - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/kalmis3k"><i class="uk-icon-hand-o-right"></i> Кальмис3к</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Зуена - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/zuena"><i class="uk-icon-hand-o-right"></i> Зуена</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Мэйдин - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/meydin"><i class="uk-icon-hand-o-right"></i> Мэйдин</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Зеркало - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/dzerkalo"><i class="uk-icon-hand-o-right"></i> Зеркало</a></td>            <td><a class="uk-button uk-button-small uk-button-success" data-uk-tooltip="{pos:'top-left'}" title="Венский - Двухэтажный дом" href="http://dominant-wood.com.ua/ru/proekty/venskij-dom"><i class="uk-icon-hand-o-right"></i> Венский</a></td>        </tr> -->
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

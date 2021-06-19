@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru"
+  class="is-device-desktop is-os-mac-os is-os-mac-os-10-15-7 is-engine-webkit is-browser-chrome is-browser-chrome-91"
+  style="height: 100%;">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    .dismissButton {
+      background-color: #fff;
+      border: 1px solid #dadce0;
+      color: #1a73e8;
+      border-radius: 4px;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      height: 36px;
+      cursor: pointer;
+      padding: 0 24px
+    }
+
+    .dismissButton:hover {
+      background-color: rgba(66, 133, 244, 0.04);
+      border: 1px solid #d2e3fc
+    }
+
+    .dismissButton:focus {
+      background-color: rgba(66, 133, 244, 0.12);
+      border: 1px solid #d2e3fc;
+      outline: 0
+    }
+
+    .dismissButton:focus:not(:focus-visible) {
+      background-color: #fff;
+      border: 1px solid #dadce0;
+      outline: none
+    }
+
+    .dismissButton:focus-visible {
+      background-color: rgba(66, 133, 244, 0.12);
+      border: 1px solid #d2e3fc;
+      outline: 0
+    }
+
+    .dismissButton:hover:focus {
+      background-color: rgba(66, 133, 244, 0.16);
+      border: 1px solid #d2e2fd
+    }
+
+    .dismissButton:hover:focus:not(:focus-visible) {
+      background-color: rgba(66, 133, 244, 0.04);
+      border: 1px solid #d2e3fc
+    }
+
+    .dismissButton:hover:focus-visible {
+      background-color: rgba(66, 133, 244, 0.16);
+      border: 1px solid #d2e2fd
+    }
+
+    .dismissButton:active {
+      background-color: rgba(66, 133, 244, 0.16);
+      border: 1px solid #d2e2fd;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+    }
+
+    .dismissButton:disabled {
+      background-color: #fff;
+      border: 1px solid #f1f3f4;
+      color: #3c4043
+    }
+
+    .gm-style .gm-style-mtc label,
+    .gm-style .gm-style-mtc div {
+      font-weight: 400
+    }
+
+    .gm-style .gm-style-mtc ul,
+    .gm-style .gm-style-mtc li {
+      box-sizing: border-box
+    }
+
+    .gm-control-active>img {
+      box-sizing: content-box;
+      display: none;
+      left: 50%;
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    .gm-control-active>img:nth-child(1) {
+      display: block
+    }
+
+    .gm-control-active:hover>img:nth-child(1),
+    .gm-control-active:active>img:nth-child(1) {
+      display: none
+    }
+
+    .gm-control-active:hover>img:nth-child(2),
+    .gm-control-active:active>img:nth-child(3) {
+      display: block
+    }
+
+    .gm-ui-hover-effect {
+      opacity: .6
+    }
+
+    .gm-ui-hover-effect:hover {
+      opacity: 1
+    }
+
+    .gm-style .gm-style-cc a,
+    .gm-style .gm-style-cc button,
+    .gm-style .gm-style-cc span,
+    .gm-style .gm-style-mtc div {
+      font-size: 10px;
+      box-sizing: border-box
+    }
+
+    @media print {
+
+      .gm-style .gmnoprint,
+      .gmnoprint {
+        display: none
+      }
+    }
+
+    @media screen {
+
+      .gm-style .gmnoscreen,
+      .gmnoscreen {
+        display: none
+      }
+    }
+
+    .gm-style-pbc {
+      transition: opacity ease-in-out;
+      background-color: rgba(0, 0, 0, 0.45);
+      text-align: center
+    }
+
+    .gm-style-pbt {
+      font-size: 22px;
+      color: white;
+      font-family: Roboto, Arial, sans-serif;
+      position: relative;
+      margin: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+
+    .gm-style img {
+      max-width: none;
+    }
+
+    .gm-style {
+      font: 400 11px Roboto, Arial, sans-serif;
+      text-decoration: none;
+    }
+
+    #ajax_loader {
+      width: 100%;
+      height: 30px;
+      margin-top: 15px;
+      text-align: center;
+      border: none !important;
+    }
+
+    #arrow_top {
+      background: url("../../../../../image/chevron_up.png") no-repeat transparent;
+      background-size: cover;
+      position: fixed;
+      bottom: 50px;
+      right: 15px;
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+    }
+
+    .fancybox-margin {
+      margin-right: 0px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        margin-left: -105px;
+        position: absolute;
+        top: 75px;
+        left: 50%;
+      }
+    }
+  </style>
+  <link type="text/css" rel="stylesheet" href="css/font.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Срубы под ключ в Москве, цены на деревянные дома в России. Строительство домов из бруса от Basco </title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/stylesheet.min.css" rel="stylesheet">
+
+  <link href="https://basco.com.ua/image/catalog/favicon.png" rel="icon">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style_v2.min.css" rel="stylesheet">
+  <link href="css/media.min.css" rel="stylesheet">
+</head>
+
+<body style="position: relative; min-height: 100%; top: 0px;">
+  <header style="background-image: url(img/banner.jpeg); background-size: cover; min-height: 500px;">
+    <a class="btn-mobile_menu">
+      <span></span>
+    </a>
+    <nav class="nav-top">
+      <div class="" style="display: flex; justify-content: space-between; margin-right: 40px;
+    margin-left: 40px;">
+        <ul class="menu-top" style="display: flex; align-items: center;  margin-top: 1rem; margin-bottom: 1rem;">
+          <li>
+            <a href="#">
+              <img src="img/logo-basco.png" style="height: 30px; margin-right: 20px">
+            </a>
+          </li>
+          <li class="active">
+            <a href="index.html"><span style="color: #ccb264;">Главная</span></a>
+          </li>
+          <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+            <a href="javascript:void(0);" class="dropdown-toggle"><span style="color: #ccb264;">Проекты</span></a>
+            <ul class="secon-menu">
+              <li>
+                <a href="projects/houses/">Дома</a>
+              </li>
+              <li>
+                <a href="projects/bath/">Бани и сауны</a>
+              </li>
+              <li>
+                <a href="projects/alcove/">Беседки</a>
+              </li>
+            </ul>
+          </li>
+          <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+            <a href="javascript:void(0);" class="dropdown-toggle"><span style="color: #ccb264;">Наши
+                работы</span></a>
+            <ul class="secon-menu">
+              <li>
+                <a href="our-work/house1.html">Из
+                  оцилиндрованного бревна</a>
+              </li>
+              <li>
+                <a href="our-work/house2.html">Из
+                  профилированного бруса</a>
+              </li>
+              <li>
+                <a href="our-work/found.html">Фундаменты</a>
+              </li>
+              <li>
+                <a href="our-work/garden.html">Садовая мебель</a>
+              </li>
+            </ul>
+          </li>
+          <li style="margin-right: 10px; margin-left: 10px" class="drop-menu">
+            <a href="about_us.html"><span style="color: #ccb264;">О нас</span></a>
+          </li>
+          <li style="margin-right: 10px; margin-left: 10px">
+            <a href="">
+              <span style="color: #ccb264;">Строительство</span>
+            </a>
+          </li>
+
+          <li style="margin-right: 10px; margin-left: 10px">
+            <a href="kontakti.html">
+              <span style="color: #ccb264;">Контакты</span>
+            </a>
+          </li>
+        </ul>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center">
+          <a style="display: flex; align-items: center; color: #ccb264; margin-right: 30px; margin-top: 1rem; margin-bottom: 1rem; "
+            href="tel:+79623668362">+79623668362</a>
+          <ul class="soc-spr" style="margin-top: 1rem; margin-bottom: 1rem; ">
+            <li><a href="https://fb.com/"></a></li>
+            <li><a href="https://basco.com.ua/"></a></li>
+            <li><a href="https://instagram.com/"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="head-bottom">
+      <div class="container">
+        <h1>Выберите дом своей мечты уже сейчас!</h1>
+        <h3>Оставьте заявку прямо сейчас и наш менеджер подберет для вас лучший проект </h3>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+
+    <ul class="breadcrumb">
+      <li><a href="https://basco.com.ua/"><i class="fa fa-home"></i></a></li>
+      <li>Контакты</li>
+    </ul>
+
+    <div class="row">
+      <div id="content" class="col-sm-12">
+        <div class="row">
+          <div class="contacts-holder">
+            <div class="cont-left cont-txt">
+              <h3>Адрес</h3>
+
+
+              <span class="cut-bord"></span>
+              <p><b>Москва, Кутузовский проспект 30</p>
+
+
+              <h4>Телефоны и электронная почта:</h4>
+
+
+              <span class="cut-bord"></span>
+              <p><b>Lifecell: </b><a rel="nofollow" href="https://wa.me/79623668362">8 (962) 366 83 62</a>
+
+
+              <p><b>E-mail: </b><a rel="nofollow" href="mailto:basco-house@yandex.ru">basco-house@yandex.ru</a></p>
+
+
+            </div>
+
+
+            <div class="cont-right cont-map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8396bf52b7e14ccdb0cec8a3fab3d2d715ea8dee5e7fe8f2bba656b6acecc203&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+
+          </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
