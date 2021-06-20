@@ -410,7 +410,7 @@ table {
 
 .offer__card {
   width: 230px;
-  height: 444px;
+  height: 395px;
   background: #FFFFFF;
   box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
@@ -469,7 +469,7 @@ table {
 }
 
 .offer__card:nth-child(5) a {
-  margin-top: 8px;
+  margin-top: 28px;
 }
 
 .offer__card:nth-child(5) p {
