@@ -282,6 +282,19 @@
             <div class="container">
                 <h1>Выберите дом своей мечты уже сейчас!</h1>
                 <h3>Оставьте заявку прямо сейчас и наш менеджер подберет для вас лучший проект </h3>
+
+                <style>
+                    .logo-btn {
+                        width: 245px;
+                        background-color: orange;
+                        color: black;
+                        font-weight: 600;
+                        margin-top: 20px;
+                        height: 50px;
+                        margin-bottom: 50px;
+                    }
+                </style>
+                <button class="logo-btn button">Оставить заявку</button>
             </div>
         </div>
     </header>
@@ -326,7 +339,7 @@
             <div class="videos-slider">
                 <h3 class="videos-slider__title">Выберите дом своей мечты уже сейчас!</h3><span
                     class="videos-slider__description" style="margin-top: 20px;">Оставьте заявку прямо сейчас и наш менеджер подберет для вас лучший проект</span>
-                <a class="videos-slider__button" href="https://basco.com.ua/#">Оставить заявку</a>
+                <a class="videos-slider__button button">Оставить заявку</a>
             </div>
 
             <div class="filters-section">
@@ -983,6 +996,93 @@
             </style>
         </div>
     </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <style>
+        
+
+        .modal-block {
+            background-color:rgba(0, 0, 0, 0.45);
+            position: fixed;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+        }
+        .modal-active {
+            display: flex;
+        }
+
+        .modal-window {
+            position: relative;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: white;
+            width: 375px;
+            height: 295px;
+        }
+
+        .modal-text {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 36px;
+            cursor: pointer;
+        }
+
+    </style>
+    <div class="modal-block">
+        <div class="modal-window">
+            <div class="modal-text">Оставьте заявку сайчас</div>
+            <div class="modal-close">&times;</div>
+            <form class="form form-contact-index" method="get" novalidate="novalidate">
+                <input type="hidden" id="text" name="sendpage" value="Форма в блоке контакты на главной">
+                <div class="row-form row-over">
+                    <div class="in-name">
+                        <input class="form_input" type="text" name="name" placeholder="Имя:">
+                    </div>
+                    <div class="in-tel">
+                        <input class="form_input" type="text" name="phone" placeholder="Телефон:">
+                    </div>
+                </div>
+                <div class="row-form">
+                    <input class="form_input" type="text" name="email" placeholder="E-mail:">
+                </div>
+                <div class="row-form">
+                    <button type="submit" class="but-form">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
