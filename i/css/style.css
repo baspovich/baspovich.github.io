@@ -409,6 +409,7 @@ table {
 }
 
 .offer__card {
+  position: relative;
   width: 230px;
   height: 395px;
   background: #FFFFFF;
@@ -444,10 +445,12 @@ table {
 }
 
 .offer__card a {
+  position: absolute;
+  bottom: 20px;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 85px;
   height: 50px;
   border-radius: 5px;
   background: #0CB5AD;
@@ -460,17 +463,6 @@ table {
   color: #FFFFFF;
 }
 
-.offer__card:nth-child(2) a {
-  margin-top: 20px;
-}
-
-.offer__card:nth-child(3) a {
-  margin-top: 65px;
-}
-
-.offer__card:nth-child(5) a {
-  margin-top: 28px;
-}
 
 .offer__card:nth-child(5) p {
   font-size: 14px;
@@ -749,6 +741,10 @@ table {
   .courses__cards a:nth-child(17),
   .courses__cards a:nth-child(21) {
     margin-left: 20px;
+  }
+
+  .offer__card {
+    margin-bottom: 20px;
   }
 
   .email {
