@@ -38,19 +38,20 @@ body {
     margin-right: 10px;
 }
 
-.header__social {
-    margin-left: 10px;
-    color: white;
-    font-size: 18px;
+.header__social-tel svg {
+    margin-right: 20px;
 }
 
 .header__social-tel {
+    fill: white;
     color: white;
     font-size: 18px;
+    transition: .3s;
 }
 
 .header__social-tel:hover {
-    color: white;
+    fill: #EBA898;
+    color: #EBA898;
     text-decoration: none;
 }
 
@@ -84,6 +85,19 @@ body {
     text-align: center;
     color: white;
     font-size: 16px;
+}
+
+.header__pay {
+    display: flex;
+    align-items: center;
+}
+
+.header__pay svg {
+    margin-right: 35px;
+}
+
+.header__pay svg:last-of-type {
+    margin-right: 0px;
 }
 
 .menu {
@@ -234,13 +248,13 @@ body {
         font-size: 150px;
     }
     .menu {
-        padding-top: 140px;
+        padding-top: 200px;
     }
 }
 
 @media (max-width: 768px) {
     .menu {
-        padding-top: 160px;
+        padding-top: 210px;
     }
     .menu__title {
         top: 50px;
@@ -345,7 +359,7 @@ body {
     }
 
     .menu {
-        padding-top: 100px;
+        padding-top: 140px;
     }
 
     .menu__item-elem-3 {
