@@ -395,6 +395,7 @@ table {
 
 .speakers::before {
 	content: '';
+	z-index: -1;
 	display: inline-block;
 	position: absolute;
 	background: url(../img/speakers-pattern.svg) no-repeat;
@@ -600,6 +601,7 @@ table {
 
 @media screen and (max-width:1200px) {
 	.header {
+		background-image: url('../img/header-bg-med.png');
 		padding: 0 30px;
 		width: auto
 	}
@@ -817,10 +819,8 @@ table {
 		margin-bottom: 90px;
 	}
 	.header__title h1::before {
-		top: 0;
-	}
-	.header__title h1::before {
-		background: none;
+		top: -26%;
+		height: 150%;
 	}
 	.header__title p {
 		    font-size: 23px;
@@ -923,11 +923,8 @@ table {
 	}
 }
 @media screen and (max-width: 500px) {
-	.header__title h1::before {
-    	background: none;
-    }
     .header__title h1, .header__title h1 span {
-    	font-size: 28px;
+    	font-size: 22px;
     }
     .header {
         background: url(../img/header-bg-mob.png) no-repeat bottom/cover;
