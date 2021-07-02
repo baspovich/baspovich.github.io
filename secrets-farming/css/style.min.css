@@ -203,7 +203,7 @@ table {
 .header__title p {
 	text-align: center;
 	color: #fff;
-	font-size: 20px;
+	font-size: 24px;
 	position: absolute;
 	bottom: 35%;
 	font-weight: 600;
@@ -253,7 +253,9 @@ table {
 }
 
 .header__title a {
-	margin: 0 auto
+	position: relative;
+	margin: 0 auto;
+	bottom: -40px
 }
 
 .btn {
@@ -395,6 +397,7 @@ table {
 
 .speakers::before {
 	content: '';
+	z-index: -1;
 	display: inline-block;
 	position: absolute;
 	background: url(../img/speakers-pattern.svg) no-repeat;
@@ -826,9 +829,10 @@ table {
 	}
 }
 @media screen and (max-width:770px) {
-	.header__title h1{
+	.header__title h1 {
+		text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
 		height: auto;
-		font-size: 28px;
+		font-size: 41px;
 		margin-bottom: 90px;
 	}
 	.header__title h1::before {
@@ -845,7 +849,7 @@ table {
 
 @media screen and (max-width:610px) {
 	.header__title p {
-	    font-size: 18px;
+	    font-size: 22px;
 	    bottom: 30%;
 	}
 	.header__title h1::before {
@@ -854,7 +858,7 @@ table {
 	}
 	.header__title h1 {
 		    line-height: 133%;
-		    font-size: 28px;
+		    font-size: 38px;
 		    margin-bottom: 88px;
 	}
 	.header {
@@ -932,7 +936,7 @@ table {
     	background: none;
     }
     .header__title h1, .header__title h1 span {
-    	font-size: 28px;
+    	font-size: 38px;
     }
     .header {
         background: url(../img/header-bg-mob.png) no-repeat bottom/cover;
