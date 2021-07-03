@@ -259,8 +259,8 @@ table {
 }
 
 .btn {
-	width: 250px;
-	height: 60px;
+	width: 300px;
+	height: 70px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -902,7 +902,7 @@ table {
 		height: 720px
 	}
 	.bonus__text {
-		font-size: 40px
+		font-size: 34px
 	}
 	.bonus__text p {
 		font-size: 16px
@@ -1120,7 +1120,7 @@ table {
     	height: 146%;
 	}
 	.header__title h1, .header__title h1 span {
-	    font-size: 18px;
+	    font-size: 33px;
 	}
 	.header__title h1 {
 		margin-bottom: 100px;
