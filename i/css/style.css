@@ -402,7 +402,6 @@ table {
 }
 
 .offer__cards {
-  margin-top: 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -431,7 +430,7 @@ table {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   color: #15161F;
 }
@@ -764,7 +763,11 @@ table {
 
   .offer__card {
     width: 290px;
-    height: 365px;
+    height: 385px;
+  }
+
+  .offer__card:last-of-type img {
+    height: 163px;
   }
 
   .offer__card p {
@@ -1199,7 +1202,7 @@ table {
 
   .offer__card {
     width: 100%;
-    height: 100%;
+    height: 440px;
   }
 
   .offer__card a {
@@ -1321,6 +1324,16 @@ table {
   .bonus__img img {
     width: 124%;
     top: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    margin-top: 70px;
+  }
+  .offer__attention {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
