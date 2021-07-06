@@ -392,7 +392,19 @@ table {
 }
 
 .offer {
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-image: url("../img/image1.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  .offer {
+    background-image: url("../img/image-mob.png");
+  }
 }
 
 .offer h2 {
@@ -1328,20 +1340,19 @@ table {
 }
 
 @media (max-width: 768px) {
-  .offer {
-    margin-top: 70px;
-  }
   .offer__attention {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   .header__title {
     width: 372px;
   }
-
+  .offer {
+    background-size: auto;
+  }
   .footer .container {
     width: 220px;
     margin: 0 auto;
