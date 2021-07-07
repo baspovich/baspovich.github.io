@@ -73,6 +73,7 @@ h5 {
     color: #000000;
 }
 .title_home {
+    line-height: 26px;
     font-family: robotoslab;
 }
 .full_width {
@@ -328,7 +329,7 @@ ul.menu > li:hover .sub-menu {
 .about_us_section,
 .attroney_section_page,
 .lw_news_section {
-    padding: 87px 0px 87px 0px;
+    padding: 55px 0px 87px 0px;
 }
 .practice_crousel .owl-item {
     padding: 0 15px;
@@ -2158,6 +2159,7 @@ button#loadmore:focus {
 }
 
 .border_box {
+    height: 295px;
     padding: 40px 15px;
     border-bottom: 1px solid #e1e1e1;
     border-right: 1px solid #e1e1e1;
@@ -2230,7 +2232,8 @@ button#loadmore:focus {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #f9f1da;
-    line-height: 27px;
+    font-size: 12px;
+    line-height: 21px;
 }
 .overlay_box a {
     display: inline-block;
