@@ -1,0 +1,2529 @@
+/*------------- css table
+1.body css start /body
+2.normal css start / li
+3.wrapper css / .wrapper_main
+4.top bar css/ .lw_wrapper_top_bar
+5.navigation css / .lw_navigation_wrapper
+6.slider section css / .tp-bgimg
+7.slider form bottom css / .lw_form_heading
+8.practice area css  css / .lw_practice_area_section
+9.History section css  / .lw_history_section
+10.client section css  / .lw_client_section
+11.Attorney section css  / .attorney_img_wrap
+12.news section css  / .lw_news_section
+13.Crousel section css  / .lw_crousel_section
+14.footer section css  / .lw_footer_section
+15.copyright  css  / .copyright_text
+16.footer navigation  css  / .lw_footer_navigation
+17.newsletter   css  / .lw_newsletter_widget
+18.about us   css  / .about_us_section
+19.about cleint section   css  / .about_client_section
+20.Mission section   css  / .lw_mission_section
+21.practice area one css / .practice_post_wrapper
+22.attorney one css start/ .attroney_section_page
+23.attorney two css start/ .lw_attroney_second
+24.contact us css start/ .lw_contact_us_section
+25.news Page css start/ .lw_news_section
+26.news post css/ .lw_news_list
+27.404 page css/ .lw_error_wrapper
+28.faq page css/ .lw_error_wrapper
+
+css table-------------------*/
+/*------- Body css Start ------------*/
+
+
+
+body {
+    margin: 0px;
+    font-family: robotoslab;
+    font-size: 14px;
+    line-height: 20px;
+    color: #474f53;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+/*------- Body css End ------------*/
+/*------normal css start-----------*/
+
+li {
+    list-style: none;
+    /*font-family: 'Roboto Slab', Black;*/
+
+}
+ul {
+    padding: 0px;
+    font-family: robotoslab;
+
+}
+p {
+    margin: 0 0 10px;
+    line-height: 26px;
+    color: #808080;
+    font-family: robotoslab;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: robotoslab;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+    color: #000000;
+}
+.title_home {
+    font-family: robotoslab;
+}
+.full_width {
+    width: 100%;
+    float: left;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+.transition,
+ul.menu li a,
+.lw_button,
+a,
+.hw_thumb_title,
+.sub-menu,
+.lw_img_overlay,
+.lw_about_quote,
+.attorney_second_wrap,
+img,
+.btn_send,
+input[type=submit],
+i.fa, button {
+    transition:  all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+
+}
+.bg_white {
+    background: #ffffff !important;
+}
+select:focus {
+    outline: #DE5727;
+}
+::selection {
+    background: #00b0f0;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: #de5727;
+    /* firefox */
+
+    color: #fff;
+}
+.tp-leftarrow {
+    display: none;
+}
+.tp-rightarrow {
+    display: none;
+}
+.lw_slider_section .tparrows {
+    display: none;
+}
+.bottom_spacer40{
+	margin-bottom: 40px;
+}
+/*------normal css start-----------*/
+/*--------- wrapper css start ------------*/
+
+.wrapper_main {
+    width: 100%;
+    float: left;
+}
+/*--------------- wrapper css end ----------------*/
+/*---------------top bar css start ----------------*/
+
+.lw_wrapper_top_bar {} .lw_address_sec,
+.lw_contact_num {
+    padding: 28px 0px;
+}
+.lw_wrapper_top_bar_main .lw_logo_top {
+    padding: 18px 0px 20px;
+}
+.lw_wrapper_top_bar .lw_logo_top {
+    padding: 33px 0px 33px;
+}
+.lw_logo {
+    border-left: 1px solid #dfe5ec;
+    border-right: 1px solid #dfe5ec;
+    text-align: center;
+}
+.lw_wrapper_top_bar svg, .lw_address_sec svg {
+    fill: #00b0f0;
+    height: 40px;
+    width: 30px;
+	margin-top: 3px;
+}
+
+.lw_wrapper_top_bar p {
+    font-size: 18px;
+    color: #4c5659;
+    font-family: robotoslab;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+/*--------------- top bar css end ----------------*/
+/*--------- navigation css Start----------*/
+
+.align-center {
+    text-align: center;
+}
+.lw_navigations {
+    display: inline-block;
+    text-align: center;
+}
+.lw_navigation_wrapper {
+    background: #464854;
+}
+.lw_navigations ul.menu {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0px;
+}
+.lw_navigation_wrapper .lw_navigations ul.menu {
+    text-align: center;
+}
+nav {
+    display: inline-block;
+}
+.lw_navigations ul.menu li {
+    display: inline-block;
+    padding: 17px 24px;
+    border-right: 1px solid #ffffff;
+    position: relative;
+}
+.lw_navigations ul.menu li:last-child {
+    border-right: none !important;
+}
+.lw_navigations ul.menu > li > a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+	border-bottom:2px solid transparent;
+	transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+    -ms-transition: all ease-in-out 0.25s;
+    -o-transition: all ease-in-out 0.25s;
+	letter-spacing: 0.075em;
+}
+ul.sub-menu li {
+    width: 100%;
+    padding: 15px 10px !important;
+}
+.lw_navigations ul li:hover .sub-menu li a:hover {
+    opacity: .6;
+}
+ul.sub-menu li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+ul.menu li a:hover {
+    text-decoration: none;
+    opacity: .6;
+}
+.current_menu_item a {
+    opacity: .6;
+}
+.current_menu_item a:after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 0px;
+    border-bottom: 2px solid;
+    position: absolute;
+    margin-top: -2px;
+}
+ul.menu > li:hover .sub-menu {
+    visibility: visible;
+    display: block;
+}
+.sub-menu {
+    padding: 0px;
+    position: absolute;
+    top: 52px;
+    left: auto;
+    z-index: 1000;
+    float: left;
+    min-width: 180px;
+    margin: 1px 0 0;
+    background: rgb(70, 72, 81);
+    text-align: left;
+    font-family: robotoslab;
+    font-weight: 300;
+}
+/*------- navigation css End ----------*/
+/*------- slider css Start ----------*/
+
+.tp-bgimg {
+    background-color: #000 !important;
+}
+.slidepara {
+    font-family: robotoslab;
+    text-transform: uppercase;
+}
+.slideheading {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*------- slider css End ----------*/
+/*------------slider form bottom css start -------------*/
+
+.lw_form_heading h4 {
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+    background: #00b0f0;
+    color: #fff;
+    padding: 18px 30px;
+    font-family: robotoslab;
+	letter-spacing: 0.025em;
+	border-radius: 5px 5px 0px 0px;
+}
+.lw_form_main {
+    padding: 36px 30px;
+    background: #e4edf0;
+    border-bottom: 2px solid #d5dfe3;
+	border-radius: 0px 5px 5px 5px;
+}
+.lw_form_main form .input_frm {
+    width: 22.2%;
+    float: left;
+    padding: 14px 24px;
+    border: 1px solid #d9e6ea;
+    font-size: 13px;
+    color: #3c4253;
+	border-radius: 5px;
+}
+.lw_form_main form .input_frm [placehoder] {
+    color: #3c4253 !important;
+}
+.submit_frm {
+    width: 11%;
+    border: none;
+    background: #00b0f0;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.submit_frm:hover {
+    background: #ffffff;
+    color: #00b0f0;
+    border-radius: 5px;
+}
+/*------------slider form  bottom css End -------------*/
+/*------------practice area css start -------------*/
+
+.lw_practice_area_section,
+.about_us_section,
+.attroney_section_page,
+.lw_news_section {
+    padding: 87px 0px 87px 0px;
+}
+.practice_crousel .owl-item {
+    padding: 0 15px;
+}
+.lw_practice_area_section .bx-pager-item a {
+    background: #a1a0a6;
+}
+.lw_heading_middle {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.hw_thumb img {
+    max-width: 100%;
+}
+.hw_thumb {
+    border: 1px solid #dbe7eb;
+    text-align: center;
+    padding: 29px 0px;
+}
+ .hw_thumb svg {
+    width: 78px;
+    fill: #464854;
+    height: 50px;
+}
+.hw_thumb_title {
+    text-align: center;
+    padding: 15px 0px;
+}
+.lw_attroney_margin .attorney_second_wrap {
+    border-bottom: 1px solid #464854;
+    margin-bottom: 88px;
+	text-align: center;
+}
+.hover_wrap .hw_thumb_title,
+.box_wrap_main .hw_thumb_title {
+    border-bottom: 1px solid #00b0f0;
+}
+.hw_thumb_title h5 {
+    text-transform: uppercase;
+    font-family: robotoslab;
+    color: #000000;
+    margin: 0px;
+    font-size: 15px;
+}
+.hw_paragraph {
+    font-family: robotoslab;
+    color: #474f53;
+    line-height: 30px;
+}
+.lw_bottom_description {
+    padding-top: 60px;
+}
+.lw_button {
+    position: relative;
+    text-align: center;
+    padding: 12px 7px;
+    border: 2px solid #00b0f0;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+	float: left;
+    width: 165px;
+}
+.lw_button a {
+    color: #000000;
+}
+.owl-pagination .active span {
+    background: #DE5727 !important;
+}
+.practice_crousel .hw_box_wrap {
+    border-bottom: 1px solid #0A6E9F;
+}
+.hw_box_wrap:hover {
+    border-bottom: none;
+    cursor: pointer;
+}
+/* slider pagination css start */
+
+#practice_crousel .owl-page {
+    border: 2px solid #a1a0a6;
+    border-radius: 50em;
+    margin-right: 5px;
+}
+#practice_crousel .owl-page span {
+    width: 5px;
+    height: 5px;
+    margin: 3px 3px;
+    background: #a1a0a6;
+}
+.practice_crousel .owl-controls {
+    padding-top: 26px;
+}
+#practice_crousel .active {
+    border-color: #00b0f0;
+}
+
+#practice_crousel {
+    float: left;
+    width: 100%;
+}
+/* slider pagination css end */
+/*------------practice area css End -------------*/
+/*------------History section css Start-------------------------*/
+
+.lw_history_section {
+    background: #f1f1f1;
+    padding: 87px 0px;
+}
+.lw_button:hover a {
+    color: #fff;
+    opacity: inherit;
+}
+.right_lawyer_img {
+    position: relative;
+    float: left;
+    width: 100%;
+    top: 5px;
+}
+.left_side_details {
+    padding-top: 28px;
+}
+.history_bg_blue .left_side_details {
+    padding-top: 44px;
+}
+.left_side_details p {
+    color: #474f53;
+    padding-top: 10px;
+    line-height: 30px;
+}
+.history_bg_blue .left_side_details p {
+    color: #ffffff;
+}
+.left_side_details p {
+    font-family: robotoslab;
+}
+.lw_year {
+    color: #00b0f0;
+}
+.history_bg_blue .lw_left_title {
+    color: #fff;
+}
+.left_side_details .lw_left_title {
+    font-family: robotoslab;
+}
+.read_more {
+    width: 165px;
+    margin-top: 26px;
+}
+/*------------History section css End-------------------------*/
+/*------------client  css Start-------------*/
+
+.lw_client_section {
+    padding: 116px 0px 87px 0px;
+}
+.lw_blockqoute_section h3 {
+    margin-top: 20px;
+}
+.lw_blockqoute_section {
+    float: left;
+    width: 100%;
+}
+.lw_blockqoute_section .lw_heading_middle {
+    text-align: left;
+    font-family: robotoslab;
+}
+.lw_count_wrap {
+    float: left;
+    width: 100%;
+	border-radius: 5px;
+    border: 1px solid #d9e6ea;
+}
+.right_counter_details p {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 4px;
+    font-size: 13px;
+}
+.right_counter_details .timer {
+    font-size: 60px;
+    margin-top: 9px;
+    color: #464854;
+    background-color: white;
+    font-family: robotoslab;
+}
+.lw_client_section .right_counter_details .timer {
+    font-family: robotoslab;
+}
+.lw_client_section .right_counter_details p {
+    font-family: robotoslab;
+    color: #373737;
+}
+.counter_wrapper {
+    padding: 33px 0px 15px 0px;
+    border-bottom: 1px solid #d9e6ea;
+}
+
+
+.counter_wrapper svg, .counter_wrapper_second svg {
+    stroke: #00b0f0;
+    width: 48px;
+    height: 47px;
+}
+.counter_wrapper_second svg {
+    margin-left: 15px;
+}
+.counter_wrapper svg g g, .counter_wrapper_second svg g g {
+    fill: #00b0f0;
+    stroke: none;
+}
+
+.count_wrap_first .counter_wrapper svg{
+    stroke: #00b0f0;
+}
+.count_wrap_first .counter_wrapper svg g g{
+	fill: #00b0f0;
+    stroke: none;
+}
+
+.blockquote_slider .item p {
+    font-size: 15px;
+    padding: 0px 30px;
+	line-height: 36px;
+    color: #464854;
+    font-family: robotoslab;
+    padding: 0px 80px;
+}
+.blockquote_slider i.fa-quote-left {
+    float: left;
+}
+.blockquote_slider i.fa-quote-right {
+    float: right;
+}
+.client_description {
+    float: left;
+    padding: 38px 0px 0px 24px;
+}
+.bloq_circle_image {
+    float: left;
+    padding-left: 45px;
+}
+.bloq_circle_image img {
+    width: 110px;
+    height: 110px;
+}
+
+.lw_bloquote_img {
+    padding-top: 1px;
+    padding-left: 30px;
+}
+.blockquote_slider i.fa {
+    font-size: 36px;
+}
+.client_description .client_title {
+    font-family: robotoslab;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000;
+}
+/*------------cleint  css end-------------*/
+/*------------Attorney section css start-----------*/
+
+.attorney_img_wrap {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.attorney_img_wrap {} .home_main_wrape .attorney_img_wrap p {
+    font-size: 14px;
+    font-family: robotoslab;
+}
+.attorney_second_wrap {
+    border-bottom: 1px solid #464854;
+}
+.attorney_img_wrap .hw_thumb_title {
+    text-align: left;
+}
+.hw_thumb_title p {
+    margin-bottom: 0;
+    color: #4a4a4a;
+    font-size: 12px;
+}
+.hover_wrap:hover .hw_thumb_title,
+.box_wrap_main:hover .hw_thumb_title {
+    /* background: #00b0f0 !important; */
+}
+.hw_box_wrap:hover .hw_thumb_title h5 {
+     color: #ffffff;
+}
+.hover_wrap:hover .hw_thumb_title h5,
+.hw_box_wrap:hover .hw_thumb_title h5 {
+    /* color: #ffffff; */
+}
+.hover_wrap:hover .hw_thumb_title p {
+    /* color: #ffffff; */
+}
+.hover_wrap:hover>.hw_thumb_title {
+    /* padding-left: 30px; */
+    /* padding-right: 20px; */
+}
+.attorney_img_wrap .hw_thumb_title {
+    padding: 27px 0px;
+	text-align: center;
+}
+/*------------Attorney section css end-----------*/
+/*------------news section css start-----------*/
+
+.lw_news_section {} .lw_news_img_wrapper {
+    position: relative;
+}
+.news_post_time {
+    position: absolute;
+    bottom: 0;
+    background: #464854;
+    color: #ffffff;
+    float: left;
+    padding: 8px 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: robotoslab;
+    font-size: 12px;
+}
+.news_post_time h3 {
+    margin: 0px;
+    color: #ffffff;
+}
+.lw_news_description {} .news_readmore {
+    margin-top: 10px;
+    float: left;
+}
+.lw_news_content {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+.lw_news_content p {
+    font-family: robotoslab;
+	line-height:29px;
+}
+.news_readmore a {
+    float: left;
+    padding: 11.6px 18.5px;
+    font-family: robotoslab;
+    text-transform: uppercase;
+}
+.lw_news_description .news_readmore a {
+    border: 2px solid #00b0f0;
+    color: #000000;
+    padding: 9.6px 17px;
+}
+.lw_recent_news_wrapper {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #e6eef1;
+}
+.lw_recent_news_wrapper:first-child {
+    padding-top: 0px;
+}
+.lw_recent_news_wrapper:last-child {
+    border-bottom: none;
+}
+.lw_recent_news_wrapper .lw_news_img_wrapper, .lw_news_img_wrapper{
+	width: 100%;
+	overflow: hidden;
+}
+.lw_recent_news_wrapper .lw_news_img_wrapper img, .lw_news_img_wrapper img{
+	transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+	width: 100%;
+	overflow: hidden;
+}
+.lw_recent_news_wrapper:hover img, .lw_news_img_wrapper:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.lw_recent_news_wrapper .news_post_time, .lw_news_img_wrapper .news_post_time{
+	transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+}
+.lw_recent_news_wrapper:hover .news_post_time, .lw_news_img_wrapper:hover .news_post_time{
+	background: #00b0f0;
+}
+/*------------news section css end-----------*/
+/*------------crousel section css Start-----------*/
+
+.lw_crousel_section {
+    background: #e4edf0;
+    padding: 81px 0px;
+}
+.lw_crousel_section .crousel_items .owl-prev{
+    left: -98px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.lw_crousel_section .crousel_items .owl-next {
+    right: -98px;
+	top: 50%;
+	transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+/*------------crousel section css end-----------*/
+/*------------footer section css start-----------*/
+
+.lw_footer_section {
+    background-color: #464854;
+    padding: 87px 0px;
+}
+.second_footer {
+    background: #464854;
+}
+
+/*-------copyright css Start--------*/
+
+.copyright_text {
+    text-transform: uppercase;
+    color: #919398;
+    font-weight: 900;
+    padding-top: 12px;
+}
+/*-------copyright css End--------*/
+/*-------footer navigation css Start-------*/
+
+.lw_footer_navigation {} .lw_widghet_title {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.lw_traingle_footer .lw_widghet_title {
+    font-family: robotoslab;
+}
+.lw_footer_navigation ul.footer_menu {
+    padding: 0;
+}
+ul.footer_menu li {
+    margin-bottom: 7px;
+}
+ul.footer_menu li a {
+    color: #919398;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.lw_traingle_footer ul.footer_menu li a:hover {
+    color: #00b0f0;
+}
+.second_footer ul.footer_menu li a:hover {
+    color: #DE5727;
+}
+.lw_footer_navigation i.fa {
+    margin-right: 12px;
+}
+.footer_navigation_second {
+    margin-top: 49px;
+}
+/*-------footer navigation css End--------*/
+/*------------newsletter css start-------*/
+
+.lw_newsletter_widget {
+    position: relative;
+}
+.fa-input {
+    font-family: FontAwesome;
+}
+.lw_footer_contacts {
+    padding-top: 35px;
+}
+.lw_newsletter_widget input {
+    font-family: robotoslab;
+    color: #808080;
+    padding-left: 17px;
+    font-size: 13px;
+    border: none;
+    width: 100%;
+    height: 42px;
+	border-radius: 5px;
+}
+.btn_send {
+    background: #00b0f0 !important;
+    border: none;
+    position: absolute;
+    color: #fff;
+    height: 42px;
+    width: 42px;
+    top: 0;
+    right: 0;
+	border: 1px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.btn_send:hover {
+    color: #00b0f0;
+    background: #ffffff !important;
+    border-left-color: #00b0f0;
+}
+.lw_footer_contacts i.fa {
+	color: #00b0f0;
+    margin-right: 5px;
+}
+.second_footer .lw_footer_contacts i.fa {
+    color: #DE5727;
+    margin-right: 5px;
+}
+.lw_footer_contacts span {
+    color: #919398;
+}
+.second_footer .btn_send {
+    background: #de5727;
+}
+.second_footer .btn_send:hover {
+    background: #ffffff !important;
+    color: #de5727;
+	border-left-color: #de5727;
+}
+/*------------newsletter css End-------*/
+/*------------footer section css End-----------*/
+/*------------home2 css start-------*/
+
+.lw_wrapper_top_bar_main {} .lw_second_nav_wrapper {} .lw_second_nav_wrapper .lw_navigations {
+    background: #464854;
+}
+.lw_second_nav_wrapper .lw_navigations ul li {
+    border-right: none;
+    padding: 16px 12px;
+}
+.lw_second_nav_wrapper .lw_navigations ul li ul.sub-menu {
+    background: rgb(70, 72, 84);
+}
+.lw_second_nav_wrapper .navbar-header {
+    background: #1E7DAB;
+    z-index: 9;
+    position: relative;
+	right:-15px;
+}
+.lw_consultance .abs_cost {
+    color: #656565;
+    text-transform: uppercase;
+}
+.top_contact_area,
+.lw_consultance {
+    float: left;
+    width: 100%;
+}
+.lw_consultance {
+    padding: 24px 0px;
+}
+.top_contact_area .call_icon img {
+	background: #00b0f0;
+    padding: 15px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.top_contact_area .mob_no {
+    font-size: 26px;
+    font-family: robotoslab;
+    color: #242424;
+    top: 40px;
+    position: relative;
+    padding-left: 15px;
+    float: left;
+}
+.top_contact_area .call_icon {
+    overflow:hidden;
+    float: left;
+}
+
+
+.lw_navbar_search {
+    padding: 13px 0px 0px 0px;
+}
+#screan_text {
+    display: none;
+}
+.nav_search {
+    background: none;
+    border: none;
+}
+.form_control {
+    background: none;
+    border: none;
+}
+.navbar-form .input_grp input {
+    width: 100%;
+}
+.input_grp {
+    border-bottom: 1px solid #de5727;
+    padding-bottom: 3px;
+    color: #fff;
+}
+.lw_traingle_footer {
+    position: relative;
+    z-index: 1
+}
+.lw_traingle_footer:before {
+    content: "";
+    position: absolute;
+	background-color: #00b0f0;
+    width: 60%;
+    height: 250%;
+    z-index: 0;
+    -webkit-transform: rotate(-45deg) skew(-19deg, -4deg);
+    -moz-transform: rotate(-45deg) skew(-19deg, -4deg);
+    -ms-transform: rotate(-45deg) skew(-19deg, -4deg);
+    -o-transform: rotate(-45deg) skew(-19deg, -4deg);
+    transform: rotate(-45deg) skew(-20deg, -5deg);
+    -o-transform: rotate(-45deg);
+}
+.lw_traingle_footer:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #00b0f0;
+    border-left: 300px solid transparent;
+    z-index: -1;
+    right: 0;
+}
+/*------------slider form css Start--------------*/
+
+.form_wrapper_main {
+    background-color: #3c4253;
+}
+.form_wrapper_main .lw_form_heading {
+    background: #00b0f0;
+    color: #ffffff;
+    float: left;
+    padding: 25px 30px;
+    position: relative;
+}
+.slider_form {
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+
+}
+.wrapper_main.lw_slider_section {
+    position: relative;
+}
+.lw_form_heading h2 {
+    font-family: robotoslab;
+    font-size: 30px;
+	color:#fff;
+}
+.heading_sub_title {
+    font-family: robotoslab;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.lw_slider_form_bg {
+    padding: 1px 35px 0px 35px;
+    color: #ffffff;
+}
+.frm_txt_area,
+.lw_slider_form_bg input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #535969;
+}
+.lw_slider_form_bg input {
+    width: 47%;
+    margin-right: 5%;
+    font-size: 13px;
+    font-family: robotoslab;
+    padding: 10px 0px;
+    color: #ffffff;
+    float: left;
+}
+.lw_slider_form_bg input:nth-child(2n) {
+    margin-right: 0px;
+}
+.frm_txt_area {
+    resize: none;
+    width: 100%;
+    float: left;
+    height: 85px;
+    padding-top: 11px;
+    font-size: 13px;
+	overflow:hidden;
+}
+.submit_btn {
+    background: #de5727 !important;
+    border-bottom: transparent !important;
+    position: relative;
+    font-family: robotoslab;
+}
+/*----------image overlay css start-------*/
+
+.attorney_img {
+    position: relative;
+}
+.lw_img_overlay {
+    position: absolute;
+    width: 101%;
+    height: 51%;
+    top: 49%;
+    background: #f1f1f1;
+}
+.img_overlay_inner p {
+    color: #808080;
+    padding: 23px 4px 27px 4px;
+    margin-bottom: 0;
+    width: 100%;
+    float: left;
+}
+.hs_client_img{
+    border-radius: 0px !important;
+	box-shadow: none !important;
+}
+.hs_client_img img{
+    display: inline-block;
+}
+.overlay_social i.fa {
+    color: #000000;
+    margin-right: 10px;
+}
+.img_overlay_inner .overlay_social i.fa {
+    font-size: 15px;
+}
+.overlay_social a:first-child i.fa:hover {
+    cursor: pointer;
+    color: #3b5998;
+}
+.overlay_social a:nth-child(2) i.fa:hover {
+    cursor: pointer;
+    color: #00aced;
+}
+.overlay_social a:nth-child(3) i.fa:hover {
+    cursor: pointer;
+    color: #dd4b39;
+}
+.lw_img_overlay {
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.attorney_img_wrap:hover .lw_img_overlay {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    display: block;
+}
+.overlay_social {
+    /* width: 100%;
+    float: left; */
+    padding: 0px 10px;
+}
+.lw_our_attorney {
+    padding: 87px 0px;
+    background: #0a6e9f;
+}
+
+.history_bg_blue {
+    background: #464854;
+    color: #fff;
+}
+.history_bg_blue .lw_heading_middle {
+    color: #fff;
+}
+.read_more_orange a {
+    background: #00b0f0;
+    color: #ffffff;
+    padding: 13px 35.5px;
+    text-transform: uppercase;
+    font-family: robotoslab;
+    float: left;
+    border: 1px solid transparent;
+}
+.read_more_orange.top_margin a {
+    padding: 14px 40px;
+}
+.hw_box_wrap:hover .hw_thumb_title {
+    background: #00b0f0;
+    border-bottom: none;
+}
+.attorney_second_wrap:hover {
+    border-bottom-color: #00b0f0;
+}
+.attorney_second_wrap .attorney_img{
+	box-shadow: none;
+}
+.lw_recent_news_wrapper h4 {
+    font-family: robotoslab;
+}
+.lw_recent_news_wrapper p {
+    font-family: robotoslab;
+    padding-top: 4px;
+    color: #808080;
+    line-height: 29px;
+}
+.lw_news_full_description .news_readmore a {
+    background: #00b0f0;
+    color: #ffffff;
+    text-transform: uppercase;
+	border: 1px solid transparent;
+}
+/*----------image overlay end-------*/
+/*------------slider form css End--------------*/
+/*-------home2 css end--------------*/
+
+.shape {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+@media (min-width: 768) {
+    .lw_address_sec p {
+        float: left;
+        text-align: right;
+    }
+    .lw_wrapper_top_bar i.fa {
+        float: left;
+    }
+}
+/*--------------about us css start------------------*/
+
+.about_us_section {} .about_left_part {
+    color: #808080;
+    font-family: robotoslab;
+    font-size: 15px;
+}
+.lw_about_quote {
+	background: #f1f1f1;
+    border-left: 4px solid #de5727;
+    margin: 29px 0px;
+}
+.lw_about_quote .inner_quote {
+    padding: 19px 30px;
+    font-family: robotoslab;
+    color: #000000;
+    font-size: 16px;
+    line-height: 26px;
+}
+.lw_about_quote:hover {
+    border-left-color: #464854;
+}
+.about_right_part #bx-pager a {
+    float: left;
+    margin-bottom: 16px;
+    width: 100%;
+}
+.about_right_part #bx-pager a img {
+    width: 100%;
+}
+.about_right_part .bx-wrapper {
+    margin: 0 auto 30px;
+}
+.lw_header_banner img {
+    width: 100%;
+}
+/*--------------about us css End------------------*/
+/*---------- about client section css Start -------*/
+
+.about_client_section {
+    padding: 87px 0px;
+}
+.counter_wrapper_second .right_counter_details p {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: robotoslab;
+    color: #373737;
+    margin: 0px 0px 0px 0px;
+    padding-top: 3px;
+}
+.counter_wrapper_second {
+    float: left;
+    width: 100%;
+    padding: 36px 0px 26px;
+}
+.counter_wrapper_second .right_counter_details h1 {
+    font-family: robotoslab;
+}
+/*---------- about client section css End -------*/
+/*-------------mision section start---------------*/
+
+.lw_mission_section {
+    padding: 87px 0px 0px 0px;
+}
+.lw_mission_lists ul li {
+    color: #ffd0c0;
+    font-size: 15px;
+    line-height: 36px;
+}
+.lw_mission_lists .read_more_orange {
+    margin-top: 35px;
+}
+.lw_mission_lists ul li:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f00c";
+    margin-right: 10px;
+	color:#ffffff;
+}
+/*-------------mision section End---------------*/
+/*--------------practice area one css start--------*/
+
+.practice_post_wrapper {} .practice_thumb_wrapper,
+.attorney_img {
+	overflow: hidden;
+    border-radius: 100%;
+    box-shadow: 1px 2px 3px #9a9a9a;
+}
+.practice_thumb_wrapper{
+	border-radius: 0px;
+	box-shadow: none;
+}
+.practice_thumb_wrapper:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.lw_practice_desc {}
+
+.lw_practice_desc p {
+    font-family: robotoslab;
+    color: #808080;
+    font-size: 15px;
+}
+.lw_practice_desc .read_more_orange a {
+    padding: 12px 23px;
+}
+.practice_title {
+    font: 18px Lora;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 37px 0px 19px 0px;
+}
+.lw_practice_desc .read_more_orange {
+    margin-top: 30px;
+}
+.practice_main_wrapper .practice_post_wrapper {
+    margin: 40px 0px;
+    float: left;
+    width: 100%;
+}
+/*--------------practice area one css end--------*/
+/*--------------practice area two css Start--------*/
+
+.main_wrap_middle {
+    padding-bottom: 90px;
+}
+.right_side_details_practice .lw_mission_lists {
+    padding-top: 20px;
+}
+.square_thumb {
+    float: left;
+    width: 100%;
+    padding-top: 44px;
+}
+.right_side_details_practice .lw_mission_lists ul li {
+    color: #808080;
+}
+.lw_practice_desc .lw_mission_lists ul li:before {
+    color: #000;
+}
+.square_thumb .read_more_orange a {
+    float: right;
+}
+.right_side_details_practice .practice_title {
+    padding: 22px 0px 19px 0px;
+}
+.pagination_area {
+    text-align: center;
+}
+/*--------------practice area one css End--------*/
+/*----------attorney one css start-----------*/
+
+.attroney_section_page {} .attroney_desc {
+    padding: 30px 0px 30px 0px;
+}
+.hw_attorney_title_wrap {
+    color: #000000;
+    display: inline-block;
+    margin: 10px 0px 0px;
+}
+.testimonials_img{
+	float: left;
+    margin-right: 15px;
+}
+.lw_recent_news_content .hw_attorney_title_wrap h4 {
+    margin-bottom: 2px;
+}
+
+.hw_attorney_title_wrap h4{
+	margin-bottom:3px;
+	color: #464854;
+}
+.hw_attorney_title_wrap h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: robotoslab;
+	line-height:24px;
+	color: #464854;
+}
+.attroney_desc p {
+    font-size: 15px;
+    color: #808080;
+    padding-top: 10px;
+	clear: both;
+}
+.attroney_desc .overlay_social i.fa {
+    font-size: 20px;
+	color: #464854;
+}
+.attroney_desc .overlay_social {
+    padding-top: 10px;
+}
+/*----------attorney one css End-----------*/
+/*----------attorney two css start-----------*/
+
+.lw_attroney_second {} .lw_attroney_second .attroney_desc {
+    padding: 29px 0px 0px 0px;
+}
+.lw_attroney_second .lw_attroney_margin {
+    margin-bottom: 88px;
+}
+/*----------attorney two css End-----------*/
+/*----------testimonial one css start-----------*/
+.attroney_section_page .col-lg-6, .attroney_section_page .col-md-6, .attroney_section_page .col-sm-6{
+	margin-bottom: 20px;
+}
+.lw_testimonials_desc p {
+    font-size: 15px;
+    color: #808080;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    position: relative;
+}
+.testimonial_wrap_main {
+    text-align: center;
+}
+.lw_testimonials_desc p:after {
+	content: "\f10e";
+    display: inline-block;
+    font: 30px FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    color: #d0d0d0;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
+.testimonial_wrap_main_second .lw_testimonials_desc p:before {
+    top: 0px;
+}
+.testimonials_img img {
+    width: 67px;
+    height: 67px;
+}
+.testimonial_wrap_main {
+    text-align: left !important;
+    padding-bottom: 20px;
+}
+.viewall_testimonial_button {
+    text-align: center;
+}
+.viewall_testimonial_button #loadmore {
+    color: #ffffff;
+    background: #00b0f0;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-family: robotoslab;
+	border: 1px solid #00b0f0;
+}
+button#loadmore:focus {
+    outline: none;
+}
+.testimonial_wrap_main {
+    display: none;
+}
+.viewall_testimonial_button #loadmore:hover {
+    color: #00b0f0;
+    background: #fff;
+    border: 1px solid #00b0f0;
+}
+/*----------testimonial one css end-----------*/
+/*----------testimonial two css start-----------*/
+
+.testimonial_wrap_main_second {
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.testimonial_wrap_main_second p{
+    background: none;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.testimonial_wrap_main_second p:after{
+	content: '';
+}
+.testimonial_slider_section {
+    background: #e4eef0;
+    padding: 105px 0px;
+}
+.testimonial_slider_content p {
+    font-family: robotoslab;
+    font-size: 16px;
+    color: #808080;
+    padding-top: 21px;
+    padding-bottom: 30px;
+}
+#testimonial_slide .owl-page>span {
+    height: 15px;
+    width: 15px;
+    background: #464854;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.testimonial_slider_content p:before {
+    content: "\f10d";
+    display: inline-block;
+    font: 36px FontAwesome;
+    color: #00b0f0;
+    position: absolute;
+}
+/*----------testimonial two css end-----------*/
+/*----------contact us css start-----------*/
+
+.lw_contact_us_section {
+    padding: 89px 0px;
+}
+.contact_wrape_box {
+    border: 1px solid #d9e6ea;
+    padding: 30px 15px 21px;
+    float: left;
+    width: 100%;
+    min-height: 158px;
+	border-radius: 5px;
+}
+.contact_wrape_box i, .contact_wrape_box svg {
+    color: #00b0f0;
+    font-size: 30px;
+    background: transparent;
+    stroke: #00b0f0;
+}
+
+.lw_contact_right_detalis h4 {
+    padding-top: 6px;
+    margin-bottom: 0px;
+}
+.lw_contact_right_detalis p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #373737;
+	word-wrap: break-word;
+}
+.news_comment_form,
+.contact_form_section {
+    padding: 80px 0px;
+    background: #e4edf0;
+}
+.lw_map_part iframe {
+    width: 100%;
+    height: 650px;
+    border: 0px;
+}
+.contact_form_heading {
+    padding-bottom: 25px;
+    text-align: center;
+}
+.lw_contact_form .contact_input, .lw_contact_form textarea.contact_textarea, .lw_contact_form select.form_select {
+    width: 100%;
+    border: 1px solid #d3e0e4;
+    padding: 13px 0px 13px 15px;
+    margin-bottom: 20px;
+    font-family: robotoslab;
+    font-size: 15px;
+	resize: none;
+    color: #808080;
+}
+.lw_contact_form select.form_select {
+    line-height: 42px;
+    overflow: hidden;
+}
+.contact_textarea {
+    height: 178px;
+}
+#frm_submit {
+    width: 145px !important;
+    text-align: center;
+    background: #00b0f0;
+    color: #fff;
+    padding: 11px 0px;
+    font-family: robotoslab;
+    font-size: 14px;
+	border:none;
+    text-transform: uppercase;
+	border: 1px solid;
+}
+.submit-btn-frm {
+    text-align: center;
+}
+/*----------contact us css end-----------*/
+/*----------news page css start----------*/
+
+.lw_news_section {} .lw_recent_news {
+    border-bottom: 1px solid #dbe4e6;
+    padding-bottom: 44px;
+    margin-bottom: 44px;
+}
+.lw_recent_news_content {
+    float: left;
+    width: 100%;
+}
+.lw_recent_news_content .read_more_orange a {
+    float: left;
+    padding: 12px 24px;
+}
+.lw_news_sharing a:hover {
+    color: #de5727;
+}
+.lw_news_sharing a {
+    color: #000000;
+}
+.lw_news_sharing {
+    padding: 30px 0px 40px 0px;
+    color: #000000;
+    font-size: 15px;
+}
+.lw_news_sharing .share_article {
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+.lw_news_sharing i.fa {
+    padding-right: 10px;
+}
+.hw_attorney_title_wrap span {
+    color: #DE5727;
+}
+.lw_recent_news_content p {
+    font-size: 15px;
+    padding-top: 10px;
+}
+.lw_widget.search_widget form {
+    position: relative;
+}
+.search_widget form input {
+    border: 1px solid #dadfe4;
+    padding: 15px 0px 15px 20px;
+    width: 100%;
+}
+.lw_widget.search_widget form button.search1 {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.tag_cloud a {
+    color: #fff;
+    background: #00b0f0;
+    font-family: robotoslab;
+    font-size: 14px;
+    padding: 12px 17px 12px 17px;
+    margin: 0px 0px 6px 2px;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid #00b0f0;
+}
+.tag_cloud a:hover {
+	color: #00b0f0;
+    background: #fff;
+    border: 1px solid #00b0f0;
+}
+.lw_widget {
+    margin-bottom: 42px;
+}
+.widget_title {
+    margin-bottom: 20px;
+}
+.widget_post_title {
+    font-family: robotoslab;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000;
+}
+.popular_posts p {
+    font-size: 15px;
+}
+.popular_posts {
+    padding: 0px 0px 23px;
+    border-bottom: 1px solid #dbe4e6;
+    margin-bottom: 23px;
+}
+.popular_posts:last-child {
+    border-bottom: 0px;
+}
+.time_date {
+    font-family: robotoslab;
+    color: #808080;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-top: 5px;
+}
+.comment_details p {
+    padding-top: 17px;
+}
+/*----------news page css End----------*/
+/*----------news post css Start----------*/
+.lw_blog_section {
+    padding: 90px 0px 80px 0px;
+}
+.lw_news_list {} .lw_recent_news_content .lw_news_list {
+    padding: 20px 0px 10px;
+}
+.lw_news_post .lw_recent_news {
+    border-bottom: none;
+}
+.lw_news_list ul li {
+    color: #808080;
+}
+.lw_news_list.lw_mission_lists ul li:before {
+    color: #000;
+}
+.news_buttons a {
+    float: left;
+    text-transform: uppercase;
+    padding: 12px 17px;
+    margin-right: 10px;
+    color: #fff;
+    text-align: center;
+    width: 105px;
+    font-family: robotoslab;
+}
+.news_buttons a.next {
+    background: #de5727;
+}
+.news_buttons a.prev {
+    background: #0a6e9f;
+}
+.news_buttons a.next:hover {
+    background-color: transparent;
+    color: #de5727;
+    box-shadow: inset 0px 0px 0px 3px #de5727;
+}
+.news_buttons a.prev:hover {
+    background-color: transparent;
+    color: #0a6e9f;
+    box-shadow: inset 0px 0px 0px 3px #0a6e9f;
+}
+.admin_inner {
+    background: #0a6e9f;
+}
+.admin_inner p {
+    color: #cccccc;
+    font-size: 15px;
+}
+.admin_inner {
+    background: #464854;
+    padding: 25px 5px 25px 15px;
+}
+.admin_section h4 {
+    color: #fff;
+    margin-top: 25px;
+}
+.lw_comment_section {
+    margin-top: 87px;
+}
+.comment_text {
+    border-bottom: 1px solid #dbe4e6;
+    padding-bottom: 22px;
+}
+.recent_comments {
+    padding: 44px 0px;
+    border-bottom: 1px solid #dbe4e6;
+}
+.recent_comments:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+.comment_details {
+    font-family: robotoslab;
+}
+.time_date span:first-child {
+    border-right: 1px solid;
+    padding-right: 13px;
+    margin-right: 13px;
+}
+.comment_details .comment_reply {
+    float: right;
+    color: #00b0f0;
+}
+.comment_details .comment_reply a {
+    color: #00b0f0;
+}
+.comment_reply a:hover {
+    text-decoration: underline;
+    color: #464854;
+}
+.lw_blog_sharing a:hover {
+    color: #de5727;
+}
+.lw_blog_sharing a {
+    color: #000000;
+}
+.lw_blog_sharing {
+    padding: 30px 0px 40px 0px;
+    color: #000000;
+    font-size: 15px;
+}
+.lw_blog_sharing .share_article {
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+.lw_blog_sharing i.fa {
+    padding-right: 10px;
+}
+.blog_buttons a {
+    float: left;
+    text-transform: uppercase;
+    width: 105px;
+    height: 43px;
+    line-height: 43px;
+    margin-right: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: robotoslab;
+}
+.blog_buttons a.next {
+    background: #00b0f0;
+}
+.blog_buttons a.prev {
+    background: #464854;
+}
+.blog_buttons a.next:hover {
+	background-color: transparent;
+    color: #00b0f0;
+    box-shadow: inset 0px 0px 0px 3px #00b0f0;
+}
+.blog_buttons a.prev:hover {
+	background-color: transparent;
+    color: #464854;
+    box-shadow: inset 0px 0px 0px 3px #464854;
+}
+.lw_recent_blog {
+    border-bottom: 1px solid #dbe4e6;
+    padding-bottom: 44px;
+    margin-bottom: 44px;
+}
+/*----------news post css End----------*/
+/* 404 error page css start */
+
+.lw_error_wrapper {
+    padding: 120px 0px;
+}
+.lw_scale,
+.error_tagline,
+.error_message {
+    float: left;
+    margin-bottom: 77px;
+    width: 100%;
+}
+.align_center {
+    text-align: center;
+}
+.lw_scale i.fa {
+    background: url('../images/sheld_icon.png')no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-size: 48px;
+    width: 113px;
+    height: 114px;
+    line-height: 113px;
+    text-align: center;
+}
+.error_message h1 {
+    font-size: 200px;
+    font-weight: bold;
+    font-family: robotoslab;
+    color: #231f20;
+}
+.error_tagline h4 {
+    font-family: robotoslab;
+    font-size: 13px;
+}
+.error_tagline {
+    margin-bottom: 41px;
+}
+.error_page .read_more_orange a {
+    float: none;
+}
+.error_page {
+    width: 100%;
+    float: left;
+}
+/*------------- 404 error page css End -------------*/
+/*----------- faq css Start --------------------*/
+
+.lw_faq_section {
+    padding: 87px 0px;
+}
+.faq_search_bar button.search_button {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.full_width.faq_search_bar {
+    position: relative;
+}
+.faq_search_bar form input {
+    width: 100%;
+    border: 1px solid #d6e0e3;
+    padding: 19px 30px 19px 22px;
+    color: #000000;
+    font-family: robotoslab;
+    font-size: 15px;
+}
+.faq_section_start {
+    padding-top: 68px;
+}
+.question_list ul li {
+    color: #000000;
+    font-size: 16px;
+    line-height: 30px;
+}
+.faq_quiz_part {
+    font-family: robotoslab;
+}
+.faq_quiz_part p {
+    padding: 40px 0px;
+    font-size: 15px;
+}
+.question_list ul li i.fa {
+    padding-right: 5px;
+}
+.lw_more_help_section {
+    background: #e4edf0;
+}
+.lw_bottom_faq {
+    text-align: center;
+}
+.more_questions .any_more_tag:after {
+    position: absolute;
+    content: "";
+    margin-bottom: 2px solid #000;
+}
+.more_questions .any_more_tag {
+    position: relative;
+}
+.more_questions .any_more_tag:after {
+    position: absolute;
+    content: "";
+    background: #de5727;
+    display: block;
+    width: 31px;
+    height: 2px;
+    z-index: 111;
+    left: 48.5%;
+    /* top: 0; */
+
+    margin-top: 15px;
+}
+.big_phone_number {
+    font-size: 72px;
+    font-weight: bold;
+    font-family: robotoslab;
+    color: #000000;
+}
+.lw_bottom_faq .big_phone_number {
+    padding-top: 72px;
+}
+.or_middle {
+    font-family: robotoslab;
+    color: #000000;
+    font-weight: bold;
+    margin: 40px 0px;
+}
+.lw_bottom_faq .read_more_orange a {
+    padding: 14px 38px;
+    float: none;
+}
+/*----------- faq css End --------------------*/
+/* button hover css start */
+
+.lw_news_full_description .news_readmore a:hover,
+.read_more_orange a:hover {
+    color: #00b0f0;
+    background: #fff;
+    border: 1px solid #00b0f0;
+}
+.lw_news_description .news_readmore a:hover,
+.lw_button:hover {
+    cursor: pointer;
+    background: #00b0f0;
+    color: #fff;
+}
+#frm_submit:hover,
+.submit_btn:hover {
+    background: #fff !important;
+    color: #00b0f0;
+}
+/*----map css---*/
+#contact_google_map {
+    height: 656px;
+    width: 100%;
+}
+.submit-btn-frm #em_sub {
+    background: #00b0f0;
+    color: #ffffff;
+    padding: 12px 28.5px;
+    text-transform: uppercase;
+    font-family: robotoslab;
+    border: 1px solid #00b0f0;
+}
+#em_sub:hover, #em_sub:focus {
+    color: #de5727;
+    background: #fff;
+    border: 1px solid #00b0f0;
+}
+
+.lw_slider_section .content{
+		width:100%;
+		float:left;
+}
+
+/* button hover css End */
+/* safari css only start */
+
+
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio: 0) {}
+/* safari css only start */
+/* inernet explorer css only start */
+/*For IE9*/
+
+.lw_navigations ul.menu > li > a {
+    font-size: 14px\9;
+}
+/* inernet explorer css only end */
+
+/*--------tab animation-------*/
+.lw_practice_area_section ul.tab-content li {
+   animation:top_Fade 3s 1 ;
+   -moz-animation:top_Fade 3s 1 ;
+   -webkit-animation:top_Fade 3s 1 ;
+   -ms-animation:top_Fade 3s 1 ;
+   -o-animation:top_Fade 3s 1 ;
+   position:relative;
+}
+
+@-webkit-keyframes top_Fade {
+	0%   {opacity: 0; }
+	100%   {opacity: 1; }
+
+}
+@-moz-keyframes top_Fade {
+	0%   {opacity: 0; }
+	100%   {opacity: 1; }
+}
+@keyframes top_Fade {
+    0%   {opacity: 0; }
+	100%   {opacity: 1; }
+}
+
+
+/*  home third css start */
+/*-------lw_navigation_wrapper_third css start--------*/
+
+.counter_wrapper_main, .counter_wrapper_main svg, line, path, polygon, polyline{
+	transition: all linear 0.25s;
+    -webkit-transition: all linear 0.25s;
+    -moz-transition: all linear 0.25s;
+}
+
+.lw_navigation_wrapper_third{
+
+}
+.lw_navigation_wrapper_third .lw_navigations ul.menu li {
+    border-right: 1px solid #ffffff;
+
+}
+.lw_navigation_wrapper_third .lw_navigations {
+    text-align: center;
+    background: #464854;
+}
+.btn_blue {
+    background: #464854;
+	}
+	.btn_blue:hover {
+    color: #464854;
+    background: #fff;
+    border-left-color: #464854;
+}
+
+.top_contact_area_pane .call_details {
+    float: left;
+}
+
+.top_contact_area_pane {
+    float: left;
+    width: 100%;
+}
+.lw_top_bar_right .top_contact_area_pane {
+    float: left;
+    width: 100%;
+    padding: 24px 0px;
+}
+.call_details p.call_us {
+    font-size: 14px;
+    font-family: robotoslab;
+    text-transform: capitalize;
+	color:#4c5659;
+}
+.call_details p.mob_n {
+    font-family: robotoslab;
+    font-size: 18px;
+    color: #2c3133;
+
+}
+.call_details p{
+		margin:0px;
+		letter-spacing: 0.005em;
+		line-height: inherit;
+}
+.top_contact_area_pane i {
+	float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #1c1c1c;
+    border: 2px solid #00b0f0;
+    border-radius: 5em;
+    width: 37px;
+    font-size: 18px;
+    height: 37px;
+    line-height: 35px;
+    text-align: center;
+}
+  /*--slider details box start-*/
+.slider_details_box {
+    background: #000000b0;
+    padding: 40px 40px 40px;
+    position: relative;
+	z-index:11;
+}
+.slider_details_box h1 {
+    font-size: 35px;
+    color: #ffffff;
+    font-family: robotoslab;
+	line-height: 40px;
+}
+.slider_details_box p {
+    font-family: robotoslab;
+    font-size: 15px;
+    line-height: 30px;
+    padding-top: 15px;
+	    color: #9ea5b4;
+}
+
+.slider_details_box a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 14px 28px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+
+.lw_slider_section {
+    position: relative;
+}
+
+.middle_heading_area {
+    text-align: center;
+}
+
+.slider_section_new {
+		position:relative;
+}
+.slider_section_new .slider_details_box_wrap{
+		 position: absolute;
+		 top:22%;
+}
+.middle_heading_area p {
+    color: #474f53;
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+    width: 100%;
+	font-family: robotoslab;
+}
+.practice_area_main {
+    padding-top: 20px;
+}
+.icon_wrap_box {
+    text-align: center;
+}
+.icon_wrap_box i{
+    font-size: 50px;
+    color: #00b0f0;
+}
+.icon_wrap_box svg{
+		width:78px;
+		fill:#00b0f0;
+		height:50px;
+}
+.icon_wrap_box p {
+    color: #808080;
+    font-family: robotoslab;
+}
+
+.border_box {
+    padding: 40px 15px;
+    border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+.lw_middle_buttons {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.lw_middle_buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid #00b0f0;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: robotoslab;
+    padding: 13px 33px;
+}
+.lw_middle_buttons a:hover {
+    background: #00b0f0;
+    color: #fff;
+}
+.attorney_img_wrap .overlay_box{
+	position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #00b0f0;
+    padding: 60px 30px;
+	visibility: hidden;
+    opacity: 0;
+	 transition: all linear 0.25s;
+	-webkit-transition: all linear 0.25s;
+	-moz-transition: all linear 0.25s;
+
+}
+.attorney_img_wrap:hover .overlay_box {
+    opacity: 1;
+    visibility: visible;
+}
+/* .slider_details_box:after { */
+    /* content: ""; */
+    /* display: block; */
+    /* position: absolute; */
+    /* right: 30px; */
+    /* border-right: 80px solid transparent; */
+    /* border-left: 80px solid transparent; */
+    /* border-top: 80px solid #464854; */
+    /* transform: rotate(-10deg); */
+	/* -webkit-transform: rotate(-10deg); */
+	/* -moz-transform: rotate(-10deg); */
+	/* -o-transform: rotate(-10deg); */
+	/* -ms-transform: rotate(-10deg); */
+    /* bottom: -99px; */
+/* }	 */
+.hw_thumb_title_second h5, .hw_thumb_title_second h4{
+    font-family: robotoslab;
+    color: #fff;
+	line-height: 24px;
+    margin: 0;
+}
+.hw_thumb_title_second h5{
+    font-size: 15px;
+}
+.hw_thumb_title_second h4 {
+    font-size: 14px;
+
+}
+.overlay_box p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #f9f1da;
+    line-height: 27px;
+}
+.overlay_box a {
+    display: inline-block;
+    border: 2px solid #ffffff;
+    font: bold 14px Karlabold;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 121px;
+    height: 43px;
+    text-align: center;
+    line-height: 42px;
+	border-radius: 5px;
+}
+
+.overlay_box a:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.lw_featured_news_section {
+    float: left;
+    width: 100%;
+}
+.read_more_news {
+    width: 180px;
+    height: 43px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: robotoslab;
+    display: inline-block;
+    border: 2px solid #00b0f0;
+    text-align: center;
+    line-height: 42px;
+}
+.lw_news_content .read_more_news {
+    margin-top: 20px;
+}
+
+.read_more_news:hover {
+    color: #ffffff;
+    border: 2px solid #00b0f0;
+    background: #00b0f0;
+}
+.lw_history_section .attorney_img_wrap .attorney_img img {
+    border-radius: none !important;
+    box-shadow: none;
+}
+.lw_featured_news_section .news_post_time {
+    background: #464854;
+}
+
+.lw_count_wrap_vertical {
+    float: left;
+    width: 100%;
+}
+.counter_wrapper_main {
+    padding-top: 74px;
+    padding-bottom: 54px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.counter_wrapper_main .right_counter_details p {
+    color: #373737;
+    letter-spacing: .2em;
+}
+
+.counter_wrapper_main svg {
+    stroke: #464854;
+	width:48px;
+	height:47px;
+	margin-left:10px;
+}
+
+.counter_wrapper_main svg g g path{
+		stroke:none;
+		fill:#464854;
+}
+.counter_wrapper_main:hover.counter_wrapper_main svg{
+		stroke:#00b0f0;
+}
+
+.counter_wrapper_main:hover.counter_wrapper_main svg g g path{
+		stroke:none;
+		fill:#00b0f0;
+}
+
+.counter_wrapper_main:hover {
+    border-bottom-color: #00b0f0;
+}
+  /*--slider details box End-*/
+
+  /* client testimonial css start */
+
+  .client_craousel_wrapper {
+    background-color: #464854;
+}
+.client_testimonial_img {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+	overflow:hidden;
+}
+.client_testimonial_img img {
+		width:100%;
+}
+.client_testimonial_img:hover img {
+    transform: scale(1.2) rotate(6deg);
+    -webkit-transform: scale(1.2) rotate(6deg);
+    -moz-transform: scale(1.2) rotate(6deg);
+    -o-transform: scale(1.2) rotate(6deg);
+    -ms-transform: scale(1.2) rotate(6deg);
+}
+.client_testimonial_img .btn_testimonial {
+    position: absolute;
+    top: 35%;
+	display:inline-block;
+    right: 11%;
+    color: #ffffff;
+    text-transform: uppercase;
+	z-index:11;
+}
+.client_testimonial_img .btn_testimonial h3 {
+    color: #ffffff;
+    font-family: robotoslab;
+    margin-bottom: 0;
+    padding: 22px 22px 14px 22px;
+}
+.btn_testimonial span {
+    width: 100%;
+    display: inline-block;
+    background: rgba(192, 192, 192, 0.5);
+    height: 4px;
+    position: relative;
+}
+.btn_testimonial span:after, .btn_testimonial span:before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: rgba(192, 192, 192, 0.5);
+    width: 4px;
+    height: 13px;
+    top: 4px;
+}
+
+.btn_testimonial span.bottom_line {
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.btn_testimonial span:after{
+ right:0;
+}
+ .btn_testimonial span:before {
+		left:0;
+ }
+
+.client_testimonial_img:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(4, 10, 20, 0.49);
+    z-index: 1;
+}
+#client_testimonial .item p {
+    color: #ffd0c0;
+    line-height: 30px;
+    font-size: 15px;
+	position: relative;
+    font-family: robotoslab;
+	padding-top:20px;
+}
+
+#client_testimonial .item i.fa {
+    color: #00b0f0;
+}
+#client_testimonial .item i.fa.quote_left {
+    font-size:65px ;
+}
+#client_testimonial .item i.fa.quote_right {
+    font-size:36px;
+	float:right;
+}
+#client_testimonial .item h5, #client_testimonial .item span {
+    font: bold 15px karlabold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+	line-height:24px;
+	color:#ffffff;
+}
+#client_testimonial .item span{
+   font-size:14px;
+}
+#client_testimonial {
+    padding: 50px 70px 0px 45px;
+}
+#client_testimonial .item .bottom_title {
+    padding-top:10px;
+}
+#client_testimonial .owl-controls {
+	margin-top:20px;
+    text-align: left;
+}
+#client_testimonial .owl-page>span {
+    background: #00b0f0;
+	margin-left: 0px;
+}
+#client_testimonial .owl-page.active>span {
+    background: #f3bdaa !important;
+}
+.bg_light_blue {
+    background: #e4edf0 !important;
+}
+
+
+  /* client testimonial css end*/
+
+  /*-------lw_navigation_wrapper_third css End--------*/
+
+/*-- home third css End --*/
+
+ /* landing page css start */
+ .lawyer_landing_bg .bg_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: 0.6;
+}
+.lawyer_landing_bg {
+    background: url(../images/lawyer_bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+	background-attachment:fixed;
+}
+.landing_cover{
+ padding: 150px 0px;
+}
+
+/* slider arrow css start */
+
+.slider_version_3 .tp-leftarrow:before , .slider_version_3 .tp-rightarrow:before{
+	font-family: 'simple-line-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 30px;
+    background-color: #00b0f0;
+    width: 69px;
+    height: 73px;
+    line-height: 73px;
+}
+
+.slider_version_3 .tparrows{
+	transition: all linear 0.25s;
+    -webkit-transition: all linear 0.25s;
+    -moz-transition: all linear 0.25s;
+	visibility: visible !important;
+    opacity: 1 !important;
+
+
+
+}
+.slider_version_3 .tparrows:hover:before{
+	background-color:#535a66;
+}
+.slider_version_3 .tp-leftarrow {
+	transform: none !important;
+	-webkit-transform:none !important;
+	-moz-transform:none !important;
+
+}
+
+.slider_version_3 .tp-leftarrow:before {
+    content: "\e07a" !important;
+}
+.slider_version_3 .tp-rightarrow:before{
+	content: "\e079" !important;
+}
+
+.footer_third ul.footer_menu li a:hover{
+	color: #00b0f0;
+}
+
+
+/* slider arrow css end */
+ /* landing page css end */
+.lw_practice_area_section .tab .tab-legend {
+    overflow: inherit;
+}
