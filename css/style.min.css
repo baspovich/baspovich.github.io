@@ -227,7 +227,7 @@ table {
 .header__title h1 {
 	font-family: 'Gilroy-Black';
 	padding-top: 10px;
-	font-size: 58px;
+	font-size: 42px;
     line-height: 153%;
 	text-align: center;
 	position: relative;
@@ -247,7 +247,7 @@ table {
 	width: 100%;
 	z-index: -1;
 	left: 0;
-	top: -15%;
+	top: -20%;
 	background: url('../img/title.png')no-repeat center/contain;
 	height: 100%;	
 }
@@ -641,10 +641,7 @@ table {
 }
 @media screen and (max-width:1070px) {
 	.header__title h1 {
-		font-size: 45px;
-	}
-	.header__title h1:before {
-		top: -21%;
+		font-size: 32px;
 	}
 }
 @media screen and (max-width:980px) {
@@ -810,13 +807,16 @@ table {
 }
 @media screen and (max-width:843px) {
 	.header__title h1 {
-		font-size: 35px;
+		font-size: 30px;
+	}
+	.header__title h1:before {
+		top: -29%;
 	}
 }
 @media screen and (max-width:770px) {
 	.header__title h1{
 		height: auto;
-		font-size: 48px;
+		font-size: 28px;
 		margin-bottom: 90px;
 	}
 	.header__title h1::before {
@@ -1127,7 +1127,7 @@ table {
 	}
 	.header__title p {
 	    font-size: 17px;
-	    bottom: 30%;
+	    bottom: 40%;
 	}
 }
 @media screen and (max-width:350px) {
