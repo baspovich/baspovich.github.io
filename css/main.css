@@ -16068,6 +16068,18 @@ html.w-mod-js [data-ix=form-inter] {
     width: 90%;
     float: none
   }
+  h4 {
+    margin-bottom: -20px!important;
+  }
+  .w-col-tiny-tiny-stack {
+    padding-top: 15px!important;
+  }
+  .gm-service {
+    height: 249px;
+  }
+  .stat-row {
+    padding: 0 10px!important;
+  }
   .button-slyer-2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -16123,11 +16135,7 @@ html.w-mod-js [data-ix=form-inter] {
     height: auto;
     padding-right: 80px;
     padding-left: 15px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .5))), url("/img/5620181eb3f938374a5bea9b/568bc86fc3351d3c082322ab_562a207b0d29ddb32ec22714_Womann.png");
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url("/img/5620181eb3f938374a5bea9b/568bc86fc3351d3c082322ab_562a207b0d29ddb32ec22714_Womann.png");
-    background-position: 0 0, 100% 100%;
-    background-size: auto, auto 350px;
-    background-repeat: repeat, no-repeat
+    
   }
   .category-block._2 {
     height: auto;
@@ -18185,4 +18193,9 @@ html.w-mod-js [data-ix=form-inter] {
   font-weight: 600;
   font-style: italic;
   font-display: swap;
+}
+@media (max-width: 768px) {
+  .button-box.mob {
+    display: none!important
+  }
 }
