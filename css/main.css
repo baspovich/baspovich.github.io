@@ -391,6 +391,24 @@ button, html input[type=button], input[type=reset] {
   text-align: center;
   background-color: #ddd
 }
+.social-main {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.paragraph-succes-message {
+  margin-top: 30px!important;
+  margin-bottom: 30px!important;
+}
+.form-title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 18px;
+
+}
+.social-main .link-fix {
+  margin: 0
+}
 .w-form-fail {
   display: none;
   margin-top: 10px;
@@ -7520,7 +7538,7 @@ h4 {
   text-align: center
 }
 .text-field:focus {
-  border-color: #fff
+  border-color: red
 }
 .form-consultation {
   display: block;
@@ -9722,6 +9740,7 @@ h4 {
   padding-bottom: 0;
   padding-left: 18px
 }
+
 .div-line-casting {
   display: block;
   width: 100%;
@@ -9757,13 +9776,20 @@ h4 {
   display: inline-block;
   margin-top: 0;
   margin-right: 20px;
-  float: right;
-  border-bottom: 1px dotted hsla(0, 0%, 100%, .6);
+  width: 100%;
+  margin-bottom: 20px;
   color: #dcdcdc;
   font-size: 18px;
   font-weight: 400;
-  text-align: right;
+  text-align: center;
   letter-spacing: 1px
+}
+.text-row {
+  font-size: 16px;
+  color: #dcdcdc;
+  border-bottom: 1px dashed grey;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 .div-test-image {
   display: -webkit-box;
