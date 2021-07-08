@@ -397,14 +397,14 @@ button, html input[type=button], input[type=reset] {
   align-items: center;
 }
 .paragraph-succes-message {
-  margin-top: 30px!important;
-  margin-bottom: 30px!important;
+  margin-top: 50px!important;
+  margin-bottom: 50px!important;
 }
 .form-title {
   margin-bottom: 15px;
   text-align: center;
-  font-size: 18px;
-
+  font-size: 24px;
+  color: yellow
 }
 .social-main .link-fix {
   margin: 0
@@ -7556,11 +7556,11 @@ h4 {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  border: 1px dashed #ffc107;
+  border: 1px solid white;
   border-radius: 3px;
   background-color: transparent;
   font-family: Graphiklcg, sans-serif;
-  color: #ffc107
+  color: white
 }
 .button-send:hover {
   border: 1px dotted #ff9700;
