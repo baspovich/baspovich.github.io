@@ -404,7 +404,7 @@ button, html input[type=button], input[type=reset] {
   margin-bottom: 15px;
   text-align: center;
   font-size: 24px;
-  color: yellow
+  color: #ffc107
 }
 .social-main .link-fix {
   margin: 0
@@ -5015,7 +5015,7 @@ h4 {
   border-bottom: 1px dotted hsla(0, 0%, 100%, .6);
   opacity: 1;
   color: #fff;
-  font-size: 16.5px;
+  font-size: 14px;
   font-weight: 300;
   text-decoration: none;
   cursor: pointer
@@ -7556,11 +7556,13 @@ h4 {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid white;
+  border: 2px solid #ffc107;
   border-radius: 3px;
   background-color: transparent;
+  font-size: 15px;
   font-family: Graphiklcg, sans-serif;
-  color: white
+  font-weight: bold;
+  color: #ffc107;
 }
 .button-send:hover {
   border: 1px dotted #ff9700;
