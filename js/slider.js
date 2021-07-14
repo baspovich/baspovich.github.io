@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.offer__cards').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         appendArrows: $('.offer__arrows'),
         prevArrow: `<div class="offer__arrow offer__arrow-left">

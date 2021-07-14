@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 	/* // Open menu */
-
+	
 	/* Load more btn */
 	var count = 0;
 	$('.load-more-btn').on('click', function() {
@@ -39,6 +39,8 @@ jQuery(document).ready(function($) {
 			$(this).fadeOut(500); // Скрывать кнопку
 		}
 	});
+
+	
 
 	/* // Load more btn */
 });
